@@ -1,0 +1,28 @@
+@import "variables";
+
+@mixin underline-effect {
+  transition: $animate;
+  position: relative;
+  &:before,
+  &:after {
+    left: 0;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 2px;
+    margin: 0px 0 0;
+    transition: $animate;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: #FCF351;
+  }
+  &:hover {
+    cursor: pointer;
+    &:before,
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
