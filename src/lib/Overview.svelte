@@ -80,6 +80,11 @@
         padding:70px 0px;
       width: 75vw;
       margin: 0 auto;
+
+      @media (max-width: 1250px) {
+        padding: 0;
+      }
+
     }
     section{
       display: flex;
@@ -99,6 +104,8 @@
 
       @media (max-width: 1250px) {
         text-align: center;
+        margin-top: 70px;
+        order: 2;
       }
       i{
         font-size: 18px;
@@ -110,10 +117,12 @@
       padding-left: 200px;
       box-sizing: border-box;
 
+
       @media (max-width: 1250px) {
-        margin-top: 50px;
+        margin-top: 20px;
         padding-left: 0px;
         text-align: center;
+        order: 1;
       }
 
       h1, h2 {
