@@ -28,6 +28,9 @@
       font-size: 44px;
       text-align: center;
       margin: 150px 0 200px;
+      @media (max-width: 1250px) {
+        margin: 130px 0 180px;
+      }
     }
     section{
       display:flex;
