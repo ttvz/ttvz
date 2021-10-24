@@ -51,8 +51,17 @@
         h1{
           font-size: 28px;
           font-weight: 500;
-          height:110px;
+          display:block;
+
           text-align: center;
+
+          @media (min-width: 1250px) {
+            height:110px;
+          }
+
+          @media (max-width: 1250px) {
+            margin-bottom: 30px;
+          }
 
         }
         p{

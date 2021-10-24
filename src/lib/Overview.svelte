@@ -137,6 +137,7 @@
     .more-infos{
       border-top: 1px solid #CCC;
       margin-top: 50px;
+      margin-bottom: 50px;
       padding-top: 30px;
       .story-link{
         width:30%;
