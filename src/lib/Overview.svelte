@@ -23,7 +23,7 @@
                 {@html $t("overview.city")}.</h1>
             <h2>
                 <b>Innovation Product Manager</b>
-                <br>  - Freelance - 
+                <br>  - Freelance -
             </h2>
         </div>
     </section>
@@ -122,7 +122,7 @@
 
 
       @media (max-width: 1250px) {
-        margin-top: 40px;
+        margin-top: 50px;
         padding-left: 0px;
         text-align: center;
         order: 1;
