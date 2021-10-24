@@ -49,15 +49,15 @@
           margin: 0 auto 20px;
         }
         h1{
-          font-size: 30px;
-          font-weight: 300;
+          font-size: 28px;
+          font-weight: 500;
           height:110px;
           text-align: center;
 
         }
         p{
           font-size: 22px;
-          font-weight: 100;
+          font-weight: 300;
           min-height: 200px;
             text-align: center;
         }

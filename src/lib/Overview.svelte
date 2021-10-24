@@ -31,12 +31,12 @@
     <section class="more-infos">
         <article class="story-link">
             <h1>{$t("overview.background")}</h1>
-            <a href="/profil-thibaut_valez.pdf" download>&#8599; {$t("overview.background_article")}</a>
+            <a href="/profil-thibaut_valez.pdf" download>&#8599; {$t("overview.background_article")} (pdf)</a>
         </article>
         <article class="story-link">
             <h1>{$t("overview.job")}</h1>
-            <li><a sveltekit:prefetch href="/about">&#8599; Innovation Product Manager</a></li>
-            <li><a sveltekit:prefetch href="https://www.clubcitr.us" target="_blank">&#8599; clubcitr.us</a></li>
+            <li><a sveltekit:prefetch href="/about">&#8599; Innovation Product Manager (+)</a></li>
+            <!--<li><a sveltekit:prefetch href="https://www.clubcitr.us" target="_blank">&#8599; Membre et fondateur clubcitr.us</a></li>-->
         </article>
         <article class="story-link">
             <h1>{$t("overview.socials")}</h1>
@@ -87,10 +87,15 @@
         flex-direction: column;
       }
     }
-    .pitch, .pitch a{
+    .pitch {
       font-size: 25px;
       flex:2;
       font-weight: 500;
+
+      a{
+        font-size: 25px;
+        font-weight: 800;
+      }
 
       @media (max-width: 1250px) {
         text-align: center;
