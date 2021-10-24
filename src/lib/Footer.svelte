@@ -2,7 +2,7 @@
     import { t, locale, locales } from "./i18n/i18n";
 </script>
 <footer>
-    <a href="/profil-thibaut_valez.pdf" download>&#8599; {$t("footer.download")}</a>
+    <a href="/profil-thibaut_valez.pdf" download><span class="material-icons">call_made</span> {$t("footer.download")}</a>
 
     <select class="lang-selector" bind:value={$locale}>
         {#each locales as l}
@@ -27,5 +27,8 @@
     a {
         @include underline-effect;
       text-transform: uppercase;
+    }
+    .material-icons{
+      font-size: 14px;
     }
 </style>

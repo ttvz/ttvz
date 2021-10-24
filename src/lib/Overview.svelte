@@ -15,7 +15,7 @@
         <p class="pitch">
             {@html $t("overview.pitch")}
             <br>
-            <a href="/about">&#8599; {$t("overview.more")}</a> <i>{$t("overview.or")}</i> <a href="mailto:thibaut.valez@gmail.com">&#8599; thibaut.valez@gmail.com</a>
+            <a href="/about"><span class="material-icons">call_made</span> {$t("overview.more")}</a> <i>{$t("overview.or")}</i> <a href="mailto:thibaut.valez@gmail.com"><span class="material-icons">call_made</span> thibaut.valez@gmail.com</a>
         </p>
         <div class="identity-infos">
             <h1>
@@ -31,16 +31,16 @@
     <section class="more-infos">
         <article class="story-link">
             <h1>{$t("overview.background")}</h1>
-            <a href="/profil-thibaut_valez.pdf" download>&#8599; {$t("overview.background_article")} (pdf)</a>
+            <a href="/profil-thibaut_valez.pdf" download><span class="material-icons">call_made</span> {$t("overview.background_article")} (pdf)</a>
         </article>
         <article class="story-link">
             <h1>{$t("overview.job")}</h1>
-            <li><a sveltekit:prefetch href="/about">&#8599; Innovation Product Manager (+)</a></li>
+            <li><a sveltekit:prefetch href="/about"><span class="material-icons">call_made</span> Innovation Product Manager (+)</a></li>
             <!--<li><a sveltekit:prefetch href="https://www.clubcitr.us" target="_blank">&#8599; Membre et fondateur clubcitr.us</a></li>-->
         </article>
         <article class="story-link">
             <h1>{$t("overview.socials")}</h1>
-            <a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank">&#8599; Linkedin</a>
+            <a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons">call_made</span> Linkedin</a>
         </article>
     </section>
 
@@ -154,6 +154,13 @@
           font-weight: 300;
         }
       }
+    }
+    .pitch .material-icons{
+      font-size: 18px;
+    }
+
+    .more-infos .material-icons{
+      font-size: 14px;
     }
 
 </style>
