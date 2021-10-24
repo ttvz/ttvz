@@ -27,6 +27,12 @@
             font-size: 30px;
             font-weight: 300;
             text-align: center;
+
+              @media (max-width: 1250px) {
+                margin: 0 20px;
+                font-size: 20px;
+              }
+
         }
     }
 

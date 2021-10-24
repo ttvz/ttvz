@@ -120,7 +120,6 @@
       padding-left: 200px;
       box-sizing: border-box;
 
-
       @media (max-width: 1250px) {
         margin-top: 50px;
         padding-left: 0px;
