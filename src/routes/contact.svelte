@@ -38,5 +38,8 @@
     .material-icons{
       font-size: 20px;
       margin-right: 5px;
+      @media (max-width: 1250px) {
+        font-size: 15px;
+      }
     }
 </style>
