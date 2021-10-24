@@ -23,7 +23,7 @@
                 {@html $t("overview.city")}.</h1>
             <h2>
                 <b>Innovation Product Manager</b>
-                <br>  - Freelance
+                <br>  - Freelance - 
             </h2>
         </div>
     </section>
