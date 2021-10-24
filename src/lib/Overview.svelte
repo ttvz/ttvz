@@ -75,6 +75,9 @@
     .identity-picture{
       object-fit: cover;
       width: 100%;
+      @media (max-width: 1250px) {
+        margin-top: 50px;
+      }
     }
     .overview{
         padding:70px 0px;
@@ -119,7 +122,7 @@
 
 
       @media (max-width: 1250px) {
-        margin-top: 20px;
+        margin-top: 40px;
         padding-left: 0px;
         text-align: center;
         order: 1;
