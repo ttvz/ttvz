@@ -8,6 +8,7 @@ export default {
         "page.index-description": "Make innovatives ideas come true. Naturally digital and continuous improvement mindset.The only target of my skills is the succes of the project (business et team). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
         "header_nav.about": "About",
         "header_nav.contact": "Contact",
+        "header_nav.home": "Home",
         "footer.download": "download me",
         "overview.pitch": `Make innovatives ideas come true.<br>
             Naturally digital and continuous improvement mindset.<br>
@@ -53,18 +54,19 @@ export default {
     },
     fr: {
         "page.contact": "Me contacter",
-        "page.contact-description": "Besoin de concret ou de prise de hauteur ? N'hésitez pas à me contacter aux liens ci-dessous.",
+        "page.contact-description": "Besoin de concret ou de faire décoller vos projets ? N'hésitez pas à me contacter aux liens ci-dessous.",
         "page.about": "Innovation Product Manager | Coach Agile: en savoir plus",
         "page.about-description": "Plus d'informations sur moi Thibaut VALEZ. Ce je sais faire et ce que je peux apporter à vos projets. En compléments, les questions que l'ont me posent le plus souvent. (OKR, Lean, Growth, AARRR, PO/PM, Agile (Scrum, Safe), background technique",
         "page.index": "Innovation Product Manager | Coach Agile",
         "page.index-description": "Concrétise les idées innovantes. Naturellement tourné vers le digital et l'amélioration continue. Mes compétences sont dirigées dans le seul objectif de faire de vos projets une réussite (en termes business et humain). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
         "header_nav.about": "En savoir plus",
         "header_nav.contact": "Contact",
+        "header_nav.home": "Accueil",
         "footer.download": "téléchargez-moi",
         "overview.pitch": `Concrétise les idées innovantes.<br>
             Naturellement tourné vers le digital et l'amélioration continue.<br>
             Un seul objectif : faire de vos projets une réussite (en termes business et humain).<br><br>
-            Besoin de concret ou de prise de hauteur ?`,
+            Besoin de concret ou de faire décoller votre projet ?`,
         "overview.more": "en savoir plus",
         "overview.or": "ou",
         "overview.city": `basé à Lyon,<br>France`,

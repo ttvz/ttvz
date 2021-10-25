@@ -1,9 +1,14 @@
 <script>
     import Header from "../lib/Header.svelte";
     import Footer from "../lib/Footer.svelte";
+    import { mobile_menu } from '../stores.js';
+    import MobileMenu from "$lib/elements/MobileMenu.svelte";
 </script>
 
 <Header/>
+{#if $mobile_menu}
+    <MobileMenu/>
+{/if}
 
 <main>
     <slot></slot>
@@ -14,6 +19,7 @@
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
+
     :global(body) {
         margin: 0;
     }

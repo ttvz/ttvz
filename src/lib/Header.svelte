@@ -1,17 +1,23 @@
 <script>
     import { t } from "./i18n/i18n";
     import { page } from '$app/stores';
+    import BurgerButton from "$lib/elements/BurgerButton.svelte";
     let y;
+    let width;
 </script>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window bind:scrollY={y} bind:innerWidth={width}/>
 
 <header class:scrolled={y > 79}>
     <nav>
         <h1 class="logo"><a href="/">ttvz</a></h1>
         <ul class="links-wrapper">
-            <li class="link" class:active={$page.path === '/about'}><a href="/about">{$t("header_nav.about")}</a></li>
-            <li class="link" class:active={$page.path === '/contact'}><a href="/contact">{$t("header_nav.contact")}</a></li>
+            {#if width > 1250}
+                <li class="link" class:active={$page.path === '/about'}><a href="/about">{$t("header_nav.about")}</a></li>
+                <li class="link" class:active={$page.path === '/contact'}><a href="/contact">{$t("header_nav.contact")}</a></li>
+            {:else}
+                <li><BurgerButton scrolled={y > 79}/></li>
+            {/if}
         </ul>
     </nav>
 </header>
@@ -55,7 +61,7 @@
         margin: 0 auto;
         justify-content: space-between;
         @media (max-width: 1250px) {
-          width: 95vw;
+          width: 90vw;
         }
       }
     }
