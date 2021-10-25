@@ -14,7 +14,7 @@
 
 <section>
     <p><span class="material-icons">place</span> Paris | Lyon | France | Europe</p>
-    <a href="mailto:thibaut.valez@gmail.com"><span class="material-icons">call_made</span>thibaut.valez@gmail.com</a>
+    <a href="mailto:thibaut.valez@gmail.com"><span class="material-icons">email</span> thibaut.valez@gmail.com</a>
     <a href="tel:+33685557542"><span class="material-icons">phone_iphone</span> +33 (0)6 85 55 75 42</a>
     <a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons">call_made</span>Linkedin</a>
 </section>
