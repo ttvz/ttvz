@@ -1,14 +1,17 @@
 <script>
     import { t, locale, locales } from "./i18n/i18n";
+
+    function updateLocale(l) {
+        locale.update(n => l);
+    }
 </script>
 <footer>
     <a href="/profil-thibaut_valez.pdf" download><span class="material-icons">call_made</span> {$t("footer.download")}</a>
 
-    <select class="lang-selector" bind:value={$locale}>
-        {#each locales as l}
-            <option value={l}>{l}</option>
-        {/each}
-    </select>
+    <div>
+        <a class:active={$locale === 'en'} on:click={() => updateLocale('en')}>en</a> |
+        <a class:active={$locale === 'fr'} on:click={() => updateLocale('fr')}>fr</a>
+    </div>
 </footer>
 
 <style lang="scss">
@@ -27,6 +30,9 @@
     a {
         @include underline-effect;
       text-transform: uppercase;
+      &.active{
+        font-weight: 800;
+      }
     }
     .material-icons{
       font-size: 14px;
