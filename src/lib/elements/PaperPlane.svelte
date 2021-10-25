@@ -18,7 +18,7 @@
     width: 100vw;
     z-index: 3;
     position: absolute;
-    bottom: 120px;
+    bottom: 150px;
   }
 
   .plane {

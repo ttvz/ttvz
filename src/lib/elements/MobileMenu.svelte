@@ -50,7 +50,7 @@
     footer{
       position: absolute;
       width:100vw;
-      bottom: 60px;
+      bottom: 90px;
       margin: 0 auto;
       .material-icons{
         font-size: 15px;
