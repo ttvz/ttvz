@@ -39,7 +39,7 @@
       animation: slide 0.5s forwards;
     }
     ul{
-      margin-top: 22vh;
+      margin-top: 20vh;
       padding: 0;
       li{
         text-align: center;
@@ -50,7 +50,7 @@
     footer{
       position: absolute;
       width:100vw;
-      bottom: 40px;
+      bottom: 60px;
       margin: 0 auto;
       .material-icons{
         font-size: 15px;
