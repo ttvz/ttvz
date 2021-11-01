@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Thibaut Valez | {$t("page.about")}</title>
+    <title>Thibaut VALEZ | {$t("page.about")}</title>
     <meta name="description" content="{$t("page.about-description")}" />
     <meta
         name="robots"
