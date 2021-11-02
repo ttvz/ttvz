@@ -52,9 +52,6 @@
       width:100vw;
       bottom: 90px;
       margin: 0 auto;
-      .material-icons{
-        font-size: 15px;
-      }
       a{
         display: block;
         text-align: center;

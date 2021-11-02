@@ -42,7 +42,7 @@
         margin: 0;
         padding: 0;
     }
-    :global(p,li, a, b) {
+    :global(p,li, a, b, button) {
         font-family: 'Jost', sans-serif;
         font-weight:300;
         margin: 0;

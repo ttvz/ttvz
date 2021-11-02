@@ -9,8 +9,8 @@
     <a href="/profil-thibaut_valez.pdf" download><span class="material-icons">call_made</span> {$t("footer.download")}</a>
 
     <div>
-        <a class:active={$locale === 'en'} on:click={() => updateLocale('en')}>en</a> |
-        <a class:active={$locale === 'fr'} on:click={() => updateLocale('fr')}>fr</a>
+        <button class:active={$locale === 'en'} on:click={() => updateLocale('en')}>en</button> |
+        <button class:active={$locale === 'fr'} on:click={() => updateLocale('fr')}>fr</button>
     </div>
 </footer>
 
@@ -25,11 +25,16 @@
       flex-direction: row-reverse;
       justify-content: space-between;
     }
-    .lang-selector{
-    }
     a {
         @include underline-effect;
       text-transform: uppercase;
+    }
+    button{
+      text-transform: uppercase;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 16px;
       &.active{
         font-weight: 800;
       }

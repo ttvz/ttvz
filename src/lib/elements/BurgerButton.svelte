@@ -55,7 +55,6 @@
         bottom: 0;
       }
     }
-    &.active,
     .menu-icon__cheeckbox:checked + div {
       span {
         &:first-of-type {
@@ -69,8 +68,6 @@
       }
     }
 
-    &.active:hover span:first-of-type,
-    &.active:hover span:last-of-type,
     &:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
     &:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
       width: 14px;

@@ -41,7 +41,9 @@
         </article>
         <article class="story-link">
             <h1>{$t("overview.socials")}</h1>
-            <a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons">call_made</span> Linkedin</a>
+            <li><a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons">call_made</span> Linkedin</a></li>
+            <li><a href="https://twitter.com/ttvz_" target="_blank"><span class="material-icons">call_made</span> Twitter</a></li>
+            <li><a href="https://github.com/ttvz" target="_blank"><span class="material-icons">call_made</span> Github</a></li>
         </article>
     </section>
 
