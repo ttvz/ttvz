@@ -9,7 +9,7 @@
     <div class="arrow"></div>
 </div>
 
-<img class="identity-picture" src="./photo-thibaut_valez.jpeg" alt="thibaut valez 2021">
+<img class="identity-picture" src="./photo-thibaut_valez.webp" alt="thibaut valez 2021">
 <article class="overview">
     <section>
         <p class="pitch">
