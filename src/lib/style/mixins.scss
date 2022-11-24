@@ -10,11 +10,12 @@
     position: absolute;
     bottom: 0px;
     width: 0px;
-    height: 2px;
+    height: 20px;
     margin: 0px 0 0;
     transition: $animate;
     transition-duration: 0.5s;
     opacity: 0;
+    z-index: -1;
     background-color: #FCF351;
   }
   &:hover {

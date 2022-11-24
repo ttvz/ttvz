@@ -27,7 +27,7 @@
       font-weight: 300;
       font-size: 44px;
       text-align: center;
-      margin: 150px 0 200px;
+      margin: 150px 0 150px;
       @media (max-width: 1250px) {
         margin: 130px 0 180px;
       }
@@ -71,7 +71,7 @@
           font-size: 22px;
           font-weight: 300;
           min-height: 200px;
-            text-align: center;
+            text-align: justify;
         }
       }
     }
