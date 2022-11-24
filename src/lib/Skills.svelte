@@ -6,17 +6,17 @@
 </h1>
 <section>
     <article>
-        <img src="skills/strategic_thinking.gif" alt="strategic thinking iconography"/>
+        <img src="skills/product.jpeg" alt="strategic thinking iconography"/>
         <h1>{$t("skills.strategy-title")}</h1>
         <p>{@html $t("skills.strategy")}</p>
     </article>
     <article>
-        <img src="skills/agilite.gif" alt="agility iconography"/>
+        <img src="skills/agile.jpeg" alt="agility iconography"/>
         <h1>{$t("skills.agile-title")}</h1>
         <p>{@html $t("skills.agile")}</p>
     </article>
     <article>
-        <img src="skills/development.gif" alt="building animation"/>
+        <img src="skills/dev.jpeg" alt="building animation"/>
         <h1>{$t("skills.technical-title")}</h1>
         <p>{@html $t("skills.technical")}</p>
     </article>

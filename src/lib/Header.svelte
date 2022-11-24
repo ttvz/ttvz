@@ -42,6 +42,9 @@
         a{
           color:#FFF;
         }
+        .logo a{
+          color:#FCF351;
+        }
         ul.links-wrapper{
           li.link {
             &::before {
