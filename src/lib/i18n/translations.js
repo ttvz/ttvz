@@ -10,7 +10,7 @@ export default {
         "header_nav.contact": "Contact",
         "header_nav.home": "Home",
         "footer.download": "download me",
-        "overview.pitch": `Make innovatives ideas come true.<br>
+        "overview.pitch": `I make innovatives ideas come true.<br>
             I have naturally continuous improvement in mind and I infuse team spirit.<br>
             With discipline and energy, my goal is to have a clear rythm of work: ambitious and healthy.<br><br>
             Need more infos ?`,

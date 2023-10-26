@@ -1,6 +1,7 @@
 <script>
-    import Header from "../lib/Header.svelte";
-    import Footer from "../lib/Footer.svelte";
+    import Header from "$lib/Header.svelte";
+    import Footer from "$lib/Footer.svelte";
+    import Analytics from "$lib/Analytics.svelte";
     import { mobile_menu } from '../stores.js';
     import MobileMenu from "$lib/elements/MobileMenu.svelte";
 </script>
@@ -10,6 +11,7 @@
     <MobileMenu/>
 {/if}
 
+<Analytics />
 <main>
     <slot></slot>
 </main>
