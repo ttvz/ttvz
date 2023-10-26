@@ -16,7 +16,6 @@
 
 <div>
     <Skills/>
-    <QandA/>
 </div>
 
 <style lang="scss">

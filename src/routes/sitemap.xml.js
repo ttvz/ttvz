@@ -22,19 +22,20 @@ const sitemap = () => `<?xml version="1.0" encoding="UTF-8" ?>
 >
   <url>
     <loc>https://www.ttvz.fr</loc>
-    <lastmod>2021-01-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2023-26-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://www.ttvz.fr/about</loc>
-    <lastmod>2021-01-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2023-26-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.ttvz.fr/contact</loc>
-    <lastmod>2021-01-11</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2023-26-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>`

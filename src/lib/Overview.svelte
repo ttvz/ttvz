@@ -22,7 +22,7 @@
                 <b>Thibaut Valez</b><br>
                 {@html $t("overview.city")}.</h1>
             <h2>
-                <b>Innovation Product Manager</b>
+                <b>Scrum Master | Coach Agile</b>
                 <br>  - Freelance -
             </h2>
         </div>
@@ -35,9 +35,9 @@
         </article>
         <article class="story-link">
             <h1>{$t("overview.job")}</h1>
-            <li><a sveltekit:prefetch href="/about"><span class="material-icons">call_made</span> Innovation Product Manager</a></li>
-            <li><a sveltekit:prefetch href="/about"><span class="material-icons">call_made</span> Coaching Agile</a></li>
-            <!--<li><a sveltekit:prefetch href="https://www.clubcitr.us" target="_blank">&#8599; Membre et fondateur clubcitr.us</a></li>-->
+            <li><a sveltekit:prefetch href="/about"><span class="material-icons">call_made</span> Scrum master | Coach Agile</a></li>
+            <!--<li><a sveltekit:prefetch href="/about"><span class="material-icons">call_made</span> Innovation Product Manager</a></li>
+            <li><a sveltekit:prefetch href="https://www.clubcitr.us" target="_blank">&#8599; Membre et fondateur clubcitr.us</a></li>-->
         </article>
         <article class="story-link">
             <h1>{$t("overview.socials")}</h1>
