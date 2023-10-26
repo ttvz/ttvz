@@ -11,16 +11,16 @@ export default {
         "header_nav.home": "Home",
         "footer.download": "download me",
         "overview.pitch": `Make innovatives ideas come true.<br>
-            Naturally digital and continuous improvement mindset.<br>
-            One goal: the succes of your product (business and team perpectives).<br><br>
-            Need your project to fly or a view from top ?`,
+            I have naturally continuous improvement in mind and I infuse team spirit.<br>
+            With discipline and energy, my goal is to have a clear rythm of work: ambitious and healthy.<br><br>
+            Need more infos ?`,
         "overview.more": "more infos",
         "overview.or": "or",
         "overview.city": `based in Lyon,<br>France`,
         "overview.background": "Some background",
         "overview.job": "My job",
         "overview.socials": "Socials",
-        "overview.background_article": "10y : from Dev to Product Manager",
+        "overview.background_article": "10y : from developer to Agile",
         "skills.title": `Three main skills<br>to launch and empower your projects`,
         "skills.strategy-title": "Strategic thinking | Lean Startup",
         "skills.strategy": "My vision about Product Management is based on Lean Startup. I experienced it in various context. I use OKR to set goals and visual management tools as Value Stream Map to pilot. Then, with metrics like AARRR and feedbacks, accelerate and make the product grow.<br>From an idea to a concrete product that fits the market. From vision to task management. From roadmap to customer satisfaction survey. From Business Model Canvas to Growth. Let's get your product fly !<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Club Citrus, Digisthesia</span>",
