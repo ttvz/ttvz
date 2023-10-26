@@ -56,17 +56,17 @@ export default {
         "page.contact": "Me contacter",
         "page.contact-description": "Besoin de concret ou de faire décoller vos projets ? Contactez moi par email. Présent sur Lyon, Paris, Europe.",
         "page.about": "Scrum master | Coach Agile - En savoir plus",
-        "page.about-description": "Mes compétences clés: Pensée stratégique | Lean stratup | Coaching Agile | Amélioration continue | Direction technique.<br>Les questions que l'ont me posent le plus souvent. (OKR, Lean, Growth, AARRR, PO/PM, Agile (Scrum, Safe)",
+        "page.about-description": "Mes compétences clés: Pensée stratégique | Lean startup | Coaching Agile | Amélioration continue | Direction technique.<br>Les questions que l'ont me posent le plus souvent. (OKR, Lean, Growth, AARRR, PO/PM, Agile (Scrum, Safe)",
         "page.index": "Scrum master | Coach Agile",
         "page.index-description": "Concrétise les idées innovantes. Naturellement tourné vers le digital et l'amélioration continue. Mes compétences sont dirigées dans le seul objectif de faire de vos projets une réussite (en termes business et humain). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
         "header_nav.about": "En savoir plus",
         "header_nav.contact": "Contact",
         "header_nav.home": "Accueil",
         "footer.download": "téléchargez-moi",
-        "overview.pitch": `Concrétise les idées innovantes.<br>
-            Naturellement tourné vers le digital et l'amélioration continue.<br>
-            Un seul objectif : faire de vos projets une réussite (en termes business et humain).<br><br>
-            Besoin de concret ou de faire décoller votre projet ?`,
+        "overview.pitch": `Je concrétise les idées innovantes.<br>
+            Naturellement tourné vers l'amélioration continue et la cohésion.<br>
+            J'insuffle rigueur et  énergie pour entretenir un rythme d'équipe sain et ambitieux.<br><br>
+            Besoin de concret ?`,
         "overview.more": "en savoir plus",
         "overview.or": "ou",
         "overview.city": `basé à Lyon,<br>France`,

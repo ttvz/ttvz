@@ -5,11 +5,7 @@
     {@html $t("skills.title")}
 </h1>
 <section>
-    <article>
-        <img src="skills/product.jpg" alt="strategic thinking iconography"/>
-        <h1>{$t("skills.strategy-title")}</h1>
-        <p>{@html $t("skills.strategy")}</p>
-    </article>
+
     <article>
         <img src="skills/agile.jpg" alt="agility iconography"/>
         <h1>{$t("skills.agile-title")}</h1>
@@ -19,6 +15,11 @@
         <img src="skills/dev.jpg" alt="building animation"/>
         <h1>{$t("skills.technical-title")}</h1>
         <p>{@html $t("skills.technical")}</p>
+    </article>
+    <article>
+        <img src="skills/product.jpg" alt="strategic thinking iconography"/>
+        <h1>{$t("skills.strategy-title")}</h1>
+        <p>{@html $t("skills.strategy")}</p>
     </article>
 </section>
 
