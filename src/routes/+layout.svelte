@@ -1,7 +1,4 @@
 <style lang="scss" global>
-  @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
-
   :global(body) {
     margin: 0;
     overflow-x: hidden;
