@@ -114,7 +114,10 @@
   .more-infos .material-icons{
     font-size: 14px;
   }
-
+  ul{
+    margin:0;
+    padding:0;
+  }
 </style>
 
 <script>
@@ -154,19 +157,23 @@
     <section class="more-infos">
         <article class="story-link">
             <h1>{$t("overview.background")}</h1>
-            <a href="/profil-thibaut_valez.pdf" download><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> {$t("overview.background_article")} (pdf)</a>
+            <ul>
+                <li><a href="/profil-thibaut_valez.pdf" download><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> {$t("overview.background_article")} (pdf)</a></li>
+            </ul>
         </article>
         <article class="story-link">
             <h1>{$t("overview.job")}</h1>
-            <li><a sveltekit:prefetch href="/about"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Scrum master | Coach Agile</a></li>
-            <!--<li><a sveltekit:prefetch href="/about"><span class="material-icons">call_made</span> Innovation Product Manager</a></li>
-            <li><a sveltekit:prefetch href="https://www.clubcitr.us" target="_blank">&#8599; Membre et fondateur clubcitr.us</a></li>-->
+            <ul>
+                <li><a sveltekit:prefetch href="/about"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Scrum master | Coach Agile</a></li>
+            </ul>
         </article>
         <article class="story-link">
             <h1>{$t("overview.socials")}</h1>
-            <li><a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Linkedin</a></li>
-            <li><a href="https://twitter.com/ttvz_" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Twitter</a></li>
-            <li><a href="https://github.com/ttvz" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Github</a></li>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Linkedin</a></li>
+                <li><a href="https://twitter.com/ttvz_" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Twitter</a></li>
+                <li><a href="https://github.com/ttvz" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Github</a></li>
+            </ul>
         </article>
     </section>
 
