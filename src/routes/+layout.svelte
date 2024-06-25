@@ -1,3 +1,15 @@
+<script>
+
+    import "@fontsource/jost";
+    import "@fontsource/prompt";
+
+    import Header from "$lib/Header.svelte";
+    import Footer from "$lib/Footer.svelte";
+    import Analytics from "$lib/Analytics.svelte";
+    import { mobile_menu } from '../stores.js';
+    import MobileMenu from "$lib/elements/MobileMenu.svelte";
+</script>
+
 <style lang="scss" global>
   :global(body) {
     margin: 0;
@@ -32,14 +44,6 @@
     padding-top: 80px;
   }
 </style>
-
-<script>
-    import Header from "$lib/Header.svelte";
-    import Footer from "$lib/Footer.svelte";
-    import Analytics from "$lib/Analytics.svelte";
-    import { mobile_menu } from '../stores.js';
-    import MobileMenu from "$lib/elements/MobileMenu.svelte";
-</script>
 
 <Header/>
 {#if $mobile_menu}

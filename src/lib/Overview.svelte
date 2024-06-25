@@ -26,6 +26,7 @@
   .identity-picture{
     object-fit: cover;
     width: 100%;
+    height: auto;
     @media (max-width: 1250px) {
       margin-top: 50px;
     }
@@ -131,7 +132,7 @@
     <div class="arrow"></div>
 </div>
 
-<img class="identity-picture" src="./photo-thibaut_valez.webp" alt="thibaut valez 2024">
+<img width="640" height="360" class="identity-picture" src="./photo-thibaut_valez.webp" alt="thibaut valez 2024">
 <article class="overview">
     <section>
         <p class="pitch">
