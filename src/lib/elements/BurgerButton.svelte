@@ -1,11 +1,11 @@
 <script>
-    //import { mobile_menu } from '../../stores.js';
+    import { mobile_menu } from '../../stores.js';
 
     export let scrolled;
 </script>
 
 <div class="menu-icon" class:scrolled={scrolled}>
-    <!--<input class="menu-icon__cheeckbox" type="checkbox" bind:checked={$mobile_menu}/>-->
+    <input class="menu-icon__cheeckbox" type="checkbox" bind:checked={$mobile_menu}/>
     <div>
         <span></span>
         <span></span>
