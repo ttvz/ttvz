@@ -2,7 +2,7 @@
     import { page } from '$app/stores';
     import { getContext } from 'svelte';
     import Header from "$lib/Header.svelte";
-    import PaperPlane from "$lib/elements/PaperPlane.svelte";
+    import PaperPlane from "$lib/PaperPlane.svelte";
     import { _ } from "svelte-i18n";
 
     const mobile_menu = getContext('mobile_menu');

@@ -8,7 +8,7 @@
 
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
-    import MobileMenu from "$lib/elements/MobileMenu.svelte";
+    import MobileMenu from "$lib/MobileMenu.svelte";
 
     import en from "../lang/en.json";
     import fr from "../lang/fr.json";

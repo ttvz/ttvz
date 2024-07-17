@@ -1,21 +1,19 @@
 <script>
-    import { _ } from "svelte-i18n";
+    import { locale, _ } from "svelte-i18n";
     import Icon from 'svelte-fa'
     import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-/*
+
     function updateLocale(l) {
-        locale.update(n => l);
+        locale.set(l);
     }
- */
+
 </script>
 <footer>
     <a href="/{$_('layout.footer.pdf-link')}" download><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_("layout.footer.download")}</a>
-<!--
     <div>
         <button class:active={$locale === 'en'} on:click={() => updateLocale('en')}>en</button> |
         <button class:active={$locale === 'fr'} on:click={() => updateLocale('fr')}>fr</button>
     </div>
-    -->
 </footer>
 
 <style lang="scss">
