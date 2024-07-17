@@ -1,7 +1,7 @@
 <script>
-    import { t } from "./i18n/i18n";
+    import { _ } from "svelte-i18n";
     import { page } from '$app/stores';
-    import BurgerButton from "$lib/elements/BurgerButton.svelte";
+    import BurgerButton from "$lib/BurgerButton.svelte";
     let y;
     let width;
 </script>
@@ -13,8 +13,8 @@
         <h1 class="logo"><a href="/">ttvz</a></h1>
         <ul class="links-wrapper">
             {#if width > 1250}
-                <li class="link" class:active={$page.path === '/about'}><a href="/about">{$t("header_nav.about")}</a></li>
-                <li class="link" class:active={$page.path === '/contact'}><a href="/contact">{$t("header_nav.contact")}</a></li>
+                <li class="link" class:active={$page.path === '/about'}><a href="/about">{$_("layout.header.nav.about")}</a></li>
+                <li class="link" class:active={$page.path === '/contact'}><a href="/contact">{$_("layout.header.nav.contact")}</a></li>
             {:else}
                 <li><BurgerButton scrolled={y > 79}/></li>
             {/if}
@@ -23,9 +23,8 @@
 </header>
 
 <style lang="scss">
-  @keyframes example {
+  @keyframes scrollMenuAnimation {
     from {background-color: #FFF;}
-    to {background-color: #OOO;}
   }
     header{
       position: fixed;
@@ -37,7 +36,7 @@
       &.scrolled{
         background-color:#000;
         border-bottom: 1px solid #000;
-        animation-name: example;
+        animation-name: scrollMenuAnimation;
         animation-duration: 1s;
         a{
           color:#FFF;

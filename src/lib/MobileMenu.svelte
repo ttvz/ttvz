@@ -1,12 +1,14 @@
 <script>
-    import { t } from "../i18n/i18n";
     import { page } from '$app/stores';
-    import { mobile_menu } from '../../stores.js';
+    import { getContext } from 'svelte';
     import Header from "$lib/Header.svelte";
     import PaperPlane from "$lib/elements/PaperPlane.svelte";
+    import { _ } from "svelte-i18n";
+
+    const mobile_menu = getContext('mobile_menu');
 
     function closeMobileMenu() {
-        mobile_menu.update(n => false);
+        mobile_menu.update(() => false);
     }
 </script>
 
@@ -14,13 +16,13 @@
     <Header/>
 
     <ul>
-        <li class="link" class:active={$page.path === '/'}><a href="/" on:click={() => closeMobileMenu()}>{$t("header_nav.home")}</a></li>
-        <li class="link" class:active={$page.path === '/about'}><a href="/about" on:click={() => closeMobileMenu()}>{$t("header_nav.about")}</a></li>
-        <li class="link" class:active={$page.path === '/contact'}><a href="/contact" on:click={() => closeMobileMenu()}>{$t("header_nav.contact")}</a></li>
+        <li class="link" class:active={$page.path === '/'}><a href="/" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.home")}</a></li>
+        <li class="link" class:active={$page.path === '/about'}><a href="/about" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.about")}</a></li>
+        <li class="link" class:active={$page.path === '/contact'}><a href="/contact" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.contact")}</a></li>
     </ul>
     <PaperPlane/>
     <footer>
-        <a href="mailto:thibaut.valez@gmail.com">thibaut.valez@gmail.com</a>
+        <a href="mailto:{$_('page.contact.email')}">{$_("page.contact.email")}</a>
     </footer>
 </div>
 

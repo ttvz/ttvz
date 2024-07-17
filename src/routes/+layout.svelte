@@ -1,14 +1,40 @@
 <script>
-
     import "@fontsource/jost";
     import "@fontsource/prompt";
 
+    import { setContext } from 'svelte';
+    import { writable } from 'svelte/store';
+    import { addMessages, init, getLocaleFromNavigator } from "svelte-i18n";
+
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
-    import Analytics from "$lib/Analytics.svelte";
-    import { mobile_menu } from '../stores.js';
     import MobileMenu from "$lib/elements/MobileMenu.svelte";
+
+    import en from "../lang/en.json";
+    import fr from "../lang/fr.json";
+
+    const mobile_menu = writable();
+    $: mobile_menu.set(false);
+
+    setContext('mobile_menu', mobile_menu);
+
+    addMessages("en", en);
+    addMessages("fr", fr);
+    init({
+        fallbackLocale: 'fr',
+        initialLocale: getLocaleFromNavigator(),
+    });
 </script>
+
+<Header/>
+{#if $mobile_menu}
+    <MobileMenu/>
+{/if}
+<main>
+    <slot></slot>
+</main>
+
+<Footer/>
 
 <style lang="scss" global>
   :global(body) {
@@ -44,14 +70,3 @@
     padding-top: 80px;
   }
 </style>
-
-<Header/>
-{#if $mobile_menu}
-    <MobileMenu/>
-{/if}
-<Analytics />
-<main>
-    <slot></slot>
-</main>
-
-<Footer/>

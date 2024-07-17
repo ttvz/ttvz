@@ -1,13 +1,69 @@
+<script>
+    import { _ } from "svelte-i18n";
+    let y;
+    let windowSize;
+
+    import Icon from 'svelte-fa'
+    import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+</script>
+
+<svelte:window bind:scrollY={y} bind:innerWidth={windowSize}/>
+<div class="icon-scroll" class:hidden={y > 150 || windowSize < 1400}>
+    <div class="arrow"></div>
+</div>
+
+<img width="640" height="360" class="identity-picture" src="./{$_('page.home.overview.link-profile-photo')}" alt="{$_('page.home.overview.alt-profile-photo')}">
+<article class="overview">
+    <section>
+        <p class="pitch">
+            {@html $_('page.home.overview.pitch')}
+            <br>
+            <a href="/about"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.more')}</a> <i>{$_('page.home.overview.or')}</i> <a href="mailto:{$_('page.contact.email')}"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.contact.email')}</a>
+        </p>
+        <div class="identity-infos">
+            <h1>
+                <b>{$_('page.home.overview.name')}</b><br>
+                {@html $_('page.home.overview.city')}.</h1>
+            <h2>
+                <b>{$_('page.home.overview.role')}</b>
+                <br>  - {$_('page.home.overview.status')} -
+            </h2>
+        </div>
+    </section>
+
+    <section class="more-infos">
+        <article class="story-link">
+            <h1>{$_('page.home.overview.background')}</h1>
+            <ul>
+                <li><a href="/{$_('layout.footer.pdf-link')}" download><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.background_article')}</a></li>
+            </ul>
+        </article>
+        <article class="story-link">
+            <h1>{$_('page.home.overview.job')}</h1>
+            <ul>
+                <li><a href="/about"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.role')}</a></li>
+            </ul>
+        </article>
+        <article class="story-link">
+            <h1>{$_('page.home.overview.socials')}</h1>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.linkedin')}</a></li>
+                <li><a href="https://twitter.com/ttvz_" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.twitter')}</a></li>
+                <li><a href="https://github.com/ttvz" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.github')}</a></li>
+            </ul>
+        </article>
+    </section>
+
+</article>
+
 <style lang="scss" global>
-  a {
-    //@include underline-effect;
-  }
   .icon-scroll{
     width: 100px;
     height: 30px;
     position: fixed;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     &.hidden{
       display: none;
     }
@@ -32,7 +88,7 @@
     }
   }
   .overview{
-    padding:70px 0px;
+    padding:70px 0;
     width: 75vw;
     margin: 0 auto;
 
@@ -74,7 +130,7 @@
 
     @media (max-width: 1250px) {
       margin-top: 50px;
-      padding-left: 0px;
+      padding-left: 0;
       text-align: center;
       order: 1;
     }
@@ -119,62 +175,3 @@
     padding:0;
   }
 </style>
-
-<script>
-    import { t } from "./i18n/i18n";
-    let y;
-    let windowSize;
-
-    import Icon from 'svelte-fa'
-    import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-
-</script>
-
-<svelte:window bind:scrollY={y} bind:innerWidth={windowSize}/>
-<div class="icon-scroll" class:hidden={y > 150 || windowSize < 1400}>
-    <div class="arrow"></div>
-</div>
-
-<img width="640" height="360" class="identity-picture" src="./photo-thibaut_valez.webp" alt="thibaut valez 2024">
-<article class="overview">
-    <section>
-        <p class="pitch">
-            {@html $t("overview.pitch")}
-            <br>
-            <a href="/about"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> {$t("overview.more")}</a> <i>{$t("overview.or")}</i> <a href="mailto:thibaut.valez@gmail.com"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> thibaut.valez@gmail.com</a>
-        </p>
-        <div class="identity-infos">
-            <h1>
-                <b>Thibaut Valez</b><br>
-                {@html $t("overview.city")}.</h1>
-            <h2>
-                <b>Scrum Master | Coach Agile</b>
-                <br>  - Freelance -
-            </h2>
-        </div>
-    </section>
-
-    <section class="more-infos">
-        <article class="story-link">
-            <h1>{$t("overview.background")}</h1>
-            <ul>
-                <li><a href="/profil-thibaut_valez.pdf" download><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> {$t("overview.background_article")} (pdf)</a></li>
-            </ul>
-        </article>
-        <article class="story-link">
-            <h1>{$t("overview.job")}</h1>
-            <ul>
-                <li><a sveltekit:prefetch href="/about"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Scrum master | Coach Agile</a></li>
-            </ul>
-        </article>
-        <article class="story-link">
-            <h1>{$t("overview.socials")}</h1>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Linkedin</a></li>
-                <li><a href="https://twitter.com/ttvz_" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Twitter</a></li>
-                <li><a href="https://github.com/ttvz" target="_blank"><span class="material-icons"><Icon icon={faArrowRight}></Icon></span> Github</a></li>
-            </ul>
-        </article>
-    </section>
-
-</article>

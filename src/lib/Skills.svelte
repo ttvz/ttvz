@@ -1,25 +1,25 @@
 <script>
-    import { t } from "./i18n/i18n";
+    import { _ } from "svelte-i18n";
 </script>
 <h1 class="title">
-    {@html $t("skills.title")}
+    {@html $_('page.about.skills.title')}
 </h1>
 <section>
 
     <article>
         <img src="skills/agile.jpg" alt="agility iconography"/>
-        <h1>{$t("skills.agile-title")}</h1>
-        <p>{@html $t("skills.agile")}</p>
+        <h1>{$_('page.about.skills.agile-title')}</h1>
+        <p>{@html $_('page.about.skills.agile')}</p>
     </article>
     <article>
         <img src="skills/dev.jpg" alt="building animation"/>
-        <h1>{$t("skills.technical-title")}</h1>
-        <p>{@html $t("skills.technical")}</p>
+        <h1>{$_('page.about.skills.technical-title')}</h1>
+        <p>{@html $_('page.about.skills.technical')}</p>
     </article>
     <article>
         <img src="skills/product.jpg" alt="strategic thinking iconography"/>
-        <h1>{$t("skills.strategy-title")}</h1>
-        <p>{@html $t("skills.strategy")}</p>
+        <h1>{$_('page.about.skills.strategy-title')}</h1>
+        <p>{@html $_('page.about.skills.strategy')}</p>
     </article>
 </section>
 

@@ -1,5 +1,6 @@
 <script>
-    import { mobile_menu } from '../../stores.js';
+    import {getContext} from "svelte";
+    const mobile_menu = getContext('mobile_menu');
 
     export let scrolled;
 </script>

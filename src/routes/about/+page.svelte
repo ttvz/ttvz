@@ -1,11 +1,12 @@
 <script>
     import Skills from "$lib/Skills.svelte";
-    import { t, locale } from "../../lib/i18n/i18n";
+
+    import { _ } from "svelte-i18n";
 </script>
 
 <svelte:head>
-    <title>Thibaut VALEZ | {$t("page.about")}</title>
-    <meta name="description" content="{$t("page.about-description")}" />
+    <title>{$_("page.about.title")}</title>
+    <meta name="description" content="{$_('page.about.description')}" />
     <meta
         name="robots"
         content="index, follow, max-snippet:-1,"

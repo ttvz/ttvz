@@ -4,6 +4,8 @@ import vsharp from 'vite-plugin-vsharp';
 
 export default defineConfig({
 	plugins: [
+		vsharp({
+		}),
 		sveltekit()
 	],
 	test: {
