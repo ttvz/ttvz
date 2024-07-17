@@ -19,7 +19,7 @@
         <p class="pitch">
             {@html $_('page.home.overview.pitch')}
             <br>
-            <a href="/about"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.more')}</a> <i>{$_('page.home.overview.or')}</i> <a href="mailto:{$_('page.contact.email')}"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.contact.email')}</a>
+            <a data-sveltekit-prefetch href="/about"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.home.overview.more')}</a> <i>{$_('page.home.overview.or')}</i> <a href="mailto:{$_('page.contact.email')}"><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_('page.contact.email')}</a>
         </p>
         <div class="identity-infos">
             <h1>
