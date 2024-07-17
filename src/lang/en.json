@@ -2,62 +2,62 @@
   "layout": {
     "header": {
       "nav": {
-        "about": "En savoir plus",
+        "about": "About me",
         "contact": "Contact",
-        "home": "Accueil"
+        "home": "Home"
       }
     },
     "footer": {
-      "download": "téléchargez-moi",
+      "download": "download me",
       "pdf-link": "profil-thibaut_valez.pdf"
     }
   },
   "page": {
     "home": {
-      "title": "Thibaut VALEZ | Coach Agile / Scrum Master",
-      "description": "Thibaut VALEZ - Coach Agile / Scrum Master. Des compétences clés pour vos projets: Scrum, SAFe, Amélioration continue, Facilitation métier et technique, Pensée stratégique, Lean StartUp, Accompagnement au changement.",
+      "title": "Thibaut VALEZ | Scrum Master | Coaching | Continuous improvement",
+      "description": "Make innovatives ideas come true. Naturally digital and continuous improvement mindset.The only target of my skills is the succes of the project (business et team). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
       "overview": {
         "link-profile-photo": "photo-thibaut_valez.webp",
         "alt-profile-photo": "thibaut VALEZ 2024",
         "name": "Thibaut VALEZ",
-        "role": "Scrum Master | Coach Agile",
+        "role": "Scrum Master | Coaching",
         "status": "Freelance",
-        "pitch": "I concrétise les idées innovantes.<br>Naturellement tourné vers l'amélioration continue et la cohésion.<br> J'insuffle rigueur et  énergie pour entretenir un rythme d'équipe sain et ambitieux.<br><br>Besoin de concret ?",
-        "more": "en savoir plus",
-        "or": "ou",
-        "city": "basé à Lyon,<br>France",
-        "background": "Un peu d'histoire",
-        "job": "Mon rôle",
-        "socials": "Réseaux sociaux",
+        "pitch": "Make innovatives ideas come true. Naturally digital and continuous improvement mindset.The only target of my skills is the succes of the project (business et team). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
+        "more": "Learn more",
+        "or": "or",
+        "city": "living in Lyon,<br>France",
+        "background": "Some background",
+        "job": "My jobs",
+        "socials": "Socials",
         "linkedin": "Linkedin",
         "twitter": "Twitter",
         "github": "Github",
-        "background_article": "10 ans: du rôle de dév à aujourd'hui (pdf)"
+        "background_article": "10y : from developer to Scrum Master (pdf)"
       }
     },
     "about": {
-      "title": "Thibaut VALEZ | En savoir plus",
-      "description": "Mes compétences clés: Pensée stratégique | Lean startup | Coaching Agile | Amélioration continue | Direction technique.Les questions que l'ont me posent le plus souvent. (OKR, Lean, Growth, AARRR, PO/PM, Agile (Scrum, Safe).",
+      "title": "Thibaut VALEZ | Learn more",
+      "description": "Three main skills to launch and empower your projects: Strategic thinking, Technical knowledge, Agile management",
       "qa": {
         "title": "Q&A",
-        "subtitle": "Les questions qu'on me posent souvent (pour la retranscription, j'utilise le tutoiement c'est plus sympa)",
-        "question-a": "Product Manager ? Coach Agile ? tu as pourtant un historique de \"tech\"...",
-        "answer-a": "J'ai écris un article <a style=\"text-decoration: underline;\">ici</a> qui vise à expliquer pourquoi mon historique technique est une force dans mon job de Product Manager aujourd'hui."
+        "subtitle": "",
+        "question-a": "Product Manager ? Agile Coach ? you seem to have a technical background...",
+        "answer-a": "I wrote a complete article <a style=\\\"text-decoration: underline;\\\">here</a> about this subject (in french) and why my technical background is a strength in my Product Manager Job."
       },
       "skills": {
-        "title": "Trois compétences clés<br>pour la réussite de vos projets numériques",
-        "strategy-title": "Pensée stratégique | Lean Startup",
-        "strategy": "Mon approche du Product Management est issu du Lean Startup et j'ai pu le mettre en oeuvre dans des contextes différents. En utilisant les OKR pour se fixer des objectifs business et des outils de management visuel comme le Value stream Map pour piloter. Le but est de transformer une vision en produit concret qui a sa place sur le marché. Ensuite, grâce à des techniques d'analyses (AARRR, ...) et à la récolte de feedback, faire accélerer le produit.<br> De la vision au pilotage. De la roadmap aux mesures de satisfaction client. Du Canvas au Growth. Objectif: 'Product Market Fit'!<br><br><span style='font-weight: 100;'>Mes expériences les plus importantes dans ce domaine : Kering, Club Citrus, Digisthesia</span>",
-        "agile-title": "Coaching agile | Amélioration continue",
-        "agile": "Agiliser une ou plusieurs équipes avec Scrum et évangéliser les principes du manifeste agile font parties de mon quotidien depuis désormais plusieurs années. J'aime évoluer dans un cadre où l'amélioration continue et l'adaptibilité sont une norme. Transformer des 'Components teams' en 'Features Teams'. Mettre en place un rythme. Animer des cérémonies et des ateliers variés. Favoriser les échanges et Faciliter le travail des collaborateurs sont autant de techniques associées à ces objectifs.<br>Certifié Scrum Master et Product Owner (2016). Certifié SAFe 5 Agilist  (janvier 2022).<br><br><span style='font-weight: 100;'>Mes expériences les plus importantes dans ce domaine : Kering, Crédit Agricole Technologies & Services, Aktome</span>",
-        "technical-title": "Compréhension et facilitation technique",
-        "technical": "Une solide expérience technique en développement web/mobile et DevOps m'apporte une très bonne faculté à rationaliser le besoin métier et vulgariser le langage technique des équipes. Je suis capable de comprendre les enjeux techniques et les transformer en enjeux business (déploiement continue, R&D, ...).<br>Du javascript front, avec l'évolution des framework (Backbone, React, Svelte), au Node JS. De l'architecture Microsoft à AWS. Cet ensemble de compétences techniques me permet aujourd'hui d'identifier de nouveaux leviers business innovants.<br><br><span style='font-weight: 100;'>Mes expériences les plus importantes dans ce domaine : Michelin, L'Oreal, SNCF, Kering</span>"
+        "title": "Three main skills<br>to launch and empower your projects",
+        "strategy-title": "Strategic thinking | Lean Startup",
+        "strategy": "My vision about Product Management is based on Lean Startup. I experienced it in various context. I use OKR to set goals and visual management tools as Value Stream Map to pilot. Then, with metrics like AARRR and feedbacks, accelerate and make the product grow.<br>From an idea to a concrete product that fits the market. From vision to task management. From roadmap to customer satisfaction survey. From Business Model Canvas to Growth. Let's get your product fly !<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Club Citrus, Digisthesia</span>",
+        "agile-title": "Agile Management | Continuous improvement",
+        "agile": "To help teams and people to improve with SCRUM and to evangelize agile manifesto are part of my everyday life since many years now. I like to work in a continuous improvement and agile environment.<br>From Components teams to Feature teams, remove obstacles, conducts various meetings, find a great tempo and promote human interactions are the keys in this approach.<br>Scrum Master and Product Owner certified (2016). SAFe 5 Agilist certified (January 2022).<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Loyalty Company, Kering, Keyrus, Aktome</span>",
+        "technical-title": "Technical knowledge",
+        "technical": "With a background in web and mobile development and as a DevOps promoter, I have good undestanding of what the team needs to be efficient. I also can translate the tech languages from dev and data teams to business ones (and vice-versa). I evolved in various tech environments: from Microsoft to On Premise and AWS, from Javascript (React, Svelte, Backbone) to NodeJS or PHP, from web analytics to search engines. With this skills, I can identify innovative business levers.<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Michelin, L'Oreal, SNCF</span>"
       }
     },
     "contact": {
-      "title": "Thibaut VALEZ | Me contacter",
-      "description": "Besoin de concret ou de faire décoller vos projets ? Contactez moi par email. Présent sur Lyon, Paris, Europe.",
-      "localization": "Lyon | Genève | Paris",
+      "title": "Thibaut VALEZ | Contact me",
+      "description": "BNeed your project to fly or a view from top ? Need to know more ? Contact me.",
+      "localization": "France | Switzerland",
       "email": "thibaut.valez@gmail.com",
       "phone": "+33 (0)6 85 55 75 42",
       "social-media": "Linkedin"
