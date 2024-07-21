@@ -19,8 +19,9 @@
     const mobile_menu = writable();
     $: mobile_menu.set(false);
     const locale =  writable();
-
-    const preferences = persisted('preferences', null);
+    const preferences = persisted('preferences', {
+        locale: 'fr-FR'
+    });
     if (get(preferences).locale){
         $: locale.set(get(preferences).locale);
     } else {

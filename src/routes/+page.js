@@ -3,7 +3,9 @@ import {get} from "svelte/store";
 import { redirect } from '@sveltejs/kit';
 
 export function load({ params }) {
-    const preferences = persisted('preferences', null)
+    const preferences = persisted('preferences', {
+        locale: 'fr-FR'
+    })
     const locale = get(preferences).locale
 
     if (get(preferences).locale) {
