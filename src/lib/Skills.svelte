@@ -7,17 +7,17 @@
 <section>
 
     <article>
-        <img src="skills/agile.jpg" alt="agility iconography"/>
+        <img src="/skills/agile.jpg" alt="agility iconography"/>
         <h1>{$_('page.about.skills.agile-title')}</h1>
         <p>{@html $_('page.about.skills.agile')}</p>
     </article>
     <article>
-        <img src="skills/dev.jpg" alt="building animation"/>
+        <img src="/skills/dev.jpg" alt="building animation"/>
         <h1>{$_('page.about.skills.technical-title')}</h1>
         <p>{@html $_('page.about.skills.technical')}</p>
     </article>
     <article>
-        <img src="skills/product.jpg" alt="strategic thinking iconography"/>
+        <img src="/skills/product.jpg" alt="strategic thinking iconography"/>
         <h1>{$_('page.about.skills.strategy-title')}</h1>
         <p>{@html $_('page.about.skills.strategy')}</p>
     </article>

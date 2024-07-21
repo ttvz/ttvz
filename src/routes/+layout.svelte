@@ -3,8 +3,9 @@
     import "@fontsource/prompt";
 
     import { setContext } from 'svelte';
-    import { writable } from 'svelte/store';
+    import { writable, get } from 'svelte/store';
     import { addMessages, init, getLocaleFromNavigator } from "svelte-i18n";
+    import { persisted } from 'svelte-persisted-store'
 
     import Header from "$lib/Header.svelte";
     import Footer from "$lib/Footer.svelte";
@@ -13,16 +14,29 @@
     import en from "../lang/en.json";
     import fr from "../lang/fr.json";
 
+    const defaultLocale = getLocaleFromNavigator();
+
     const mobile_menu = writable();
     $: mobile_menu.set(false);
+    const locale =  writable();
+
+    const preferences = persisted('preferences', null);
+    if (get(preferences).locale){
+        $: locale.set(get(preferences).locale);
+    } else {
+        preferences.set({
+            locale: defaultLocale
+        })
+        $: locale.set(defaultLocale);
+    }
+    setContext('localeContext', locale);
 
     setContext('mobile_menu', mobile_menu);
-
     addMessages("en", en);
     addMessages("fr", fr);
     init({
         fallbackLocale: 'fr',
-        initialLocale: getLocaleFromNavigator(),
+        initialLocale: $locale,
     });
 </script>
 

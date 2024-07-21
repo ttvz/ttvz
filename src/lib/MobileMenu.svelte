@@ -6,7 +6,8 @@
     import { _ } from "svelte-i18n";
 
     const mobile_menu = getContext('mobile_menu');
-
+    console.log(mobile_menu)
+    const locale = getContext('locale');
     function closeMobileMenu() {
         mobile_menu.update(() => false);
     }
@@ -16,9 +17,9 @@
     <Header/>
 
     <ul>
-        <li class="link" class:active={$page.path === '/'}><a href="/" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.home")}</a></li>
-        <li class="link" class:active={$page.path === '/about'}><a href="/about" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.about")}</a></li>
-        <li class="link" class:active={$page.path === '/contact'}><a href="/contact" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.contact")}</a></li>
+        <li class="link" class:active={$page.path === '/'}><a href="/{locale}" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.home")}</a></li>
+        <li class="link" class:active={$page.path === '/about'}><a href="/{locale}/about" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.about")}</a></li>
+        <li class="link" class:active={$page.path === '/contact'}><a href="/{locale}/contact" on:click={() => closeMobileMenu()}>{$_("layout.header.nav.contact")}</a></li>
     </ul>
     <PaperPlane/>
     <footer>

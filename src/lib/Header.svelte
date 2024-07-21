@@ -2,19 +2,22 @@
     import { _ } from "svelte-i18n";
     import { page } from '$app/stores';
     import BurgerButton from "$lib/BurgerButton.svelte";
+    import {getContext} from "svelte";
     let y;
     let width;
+
+    const localeContext = getContext('localeContext');
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width}/>
 
 <header class:scrolled={y > 79}>
     <nav>
-        <h1 class="logo"><a href="/">ttvz</a></h1>
+        <h1 class="logo"><a href="/{$localeContext}">ttvz</a></h1>
         <ul class="links-wrapper">
             {#if width > 1250}
-                <li class="link" class:active={$page.path === '/about'}><a href="/about">{$_("layout.header.nav.about")}</a></li>
-                <li class="link" class:active={$page.path === '/contact'}><a href="/contact">{$_("layout.header.nav.contact")}</a></li>
+                <li class="link" class:active={$page.path === 'about'}><a href="/{$localeContext}/about">{$_("layout.header.nav.about")}</a></li>
+                <li class="link" class:active={$page.path === 'contact'}><a href="/{$localeContext}/contact">{$_("layout.header.nav.contact")}</a></li>
             {:else}
                 <li><BurgerButton scrolled={y > 79}/></li>
             {/if}
