@@ -21,20 +21,37 @@ const sitemap = () => `<?xml version="1.0" encoding="UTF-8" ?>
   xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 >
   <url>
-    <loc>https://www.ttvz.fr</loc>
-    <lastmod>2024-07-07</lastmod>
+    <loc>https://www.ttvz.fr/fr-FR</loc>
+    <lastmod>2024-07-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://www.ttvz.fr/about</loc>
-    <lastmod>2024-07-07</lastmod>
+    <loc>https://www.ttvz.fr/fr-FR/about</loc>
+    <lastmod>2024-07-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.ttvz.fr/contact</loc>
-    <lastmod>2024-07-07</lastmod>
+    <loc>https://www.ttvz.fr/fr-FR/contact</loc>
+    <lastmod>2024-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <loc>https://www.ttvz.fr/en-EN</loc>
+    <lastmod>2024-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.ttvz.fr/en-EN/about</loc>
+    <lastmod>2024-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ttvz.fr/en-EN/contact</loc>
+    <lastmod>2024-07-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
