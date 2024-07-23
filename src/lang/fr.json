@@ -61,6 +61,10 @@
       "email": "thibaut.valez@gmail.com",
       "phone": "+33 (0)6 85 55 75 42",
       "social-media": "Linkedin"
+    },
+    "error": {
+      "picture": "/lost-world-picture.png",
+      "alt-picture": "Lost world picture"
     }
   }
 }
