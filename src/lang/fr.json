@@ -64,7 +64,13 @@
     },
     "error": {
       "picture": "/lost-world-picture.png",
-      "alt-picture": "Lost world picture"
+      "alt-picture": "Image d'un monde perdu",
+      "link-home": "Retour à l'accueil",
+      "link-resume": "Télécharger mon CV",
+      "link-about": "En savoir plus",
+      "link-contact": "Me contacter",
+      "infos-first": "Ooops ! Vous avez trouvé le monde perdu !",
+      "infos-second": "Revenez sur le sentier balisé :"
     }
   }
 }

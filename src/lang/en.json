@@ -56,7 +56,7 @@
     },
     "contact": {
       "title": "Thibaut VALEZ | Contact me",
-      "description": "BNeed your project to fly or a view from top ? Need to know more ? Contact me.",
+      "description": "Need your project to fly or a view from top ? Need to know more ? Contact me.",
       "localization": "France | Switzerland",
       "email": "thibaut.valez@gmail.com",
       "phone": "+33 (0)6 85 55 75 42",
@@ -64,7 +64,13 @@
     },
     "error": {
       "picture": "/lost-world-picture.png",
-      "alt-picture": "Lost world picture"
+      "alt-picture": "Lost world picture",
+      "link-home": "Back to home",
+      "link-resume": "Download me",
+      "link-about": "About me",
+      "link-contact": "Contact me",
+      "infos-first": "Ooops ! you've discovered the lost world !",
+      "infos-second": "Back to marked trail :"
     }
   }
 }
