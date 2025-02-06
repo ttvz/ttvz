@@ -17,7 +17,6 @@
 <section>
     <p><span class="material-icons"><Icon icon={faLocationDot}/></span> {$_("page.contact.localization")}</p>
     <a href="mailto:thibaut.valez@gmail.com"><span class="material-icons"><Icon icon={faEnvelope}/></span> {$_("page.contact.email")}</a>
-    <a href="tel:+33685557542"><span class="material-icons"><Icon icon={faPhone}/></span> {$_("page.contact.phone")}</a>
     <a href="https://www.linkedin.com/in/thibaut-valez-a9014119/" target="_blank"><span class="material-icons"><Icon icon={faBullseye}/></span>{$_("page.contact.social-media")}</a>
 </section>
 
