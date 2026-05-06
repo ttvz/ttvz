@@ -1,100 +1,166 @@
 <script>
-    import { _ } from "svelte-i18n";
-    import { page } from '$app/stores';
-    import BurgerButton from "$lib/BurgerButton.svelte";
-    import {getContext} from "svelte";
-    let y;
-    let width;
+	import { _ } from 'svelte-i18n';
+	import { getContext } from 'svelte';
+	import { goto } from '$app/navigation';
+	import { persisted } from 'svelte-persisted-store';
 
-    const localeContext = getContext('localeContext');
+	const localeStore = getContext('locale');
+	const preferences = persisted('preferences', { locale: null });
+
+	let scrolled = false;
+
+	function setLocale(target) {
+		if ($localeStore === target) return;
+		preferences.set({ locale: target });
+		const hash = typeof window !== 'undefined' ? window.location.hash : '';
+		goto(`/${target}${hash}`, { replaceState: false });
+	}
 </script>
 
-<svelte:window bind:scrollY={y} bind:innerWidth={width}/>
+<svelte:window on:scroll={() => (scrolled = window.scrollY > 8)} />
 
-<header class:scrolled={y > 79}>
-    <nav>
-        <h1 class="logo"><a href="/{$localeContext}">ttvz</a></h1>
-        <ul class="links-wrapper">
-            {#if width > 1250}
-                <li class="link" class:active={$page.path === 'about'}><a href="/{$localeContext}/about">{$_("layout.header.nav.about")}</a></li>
-                <li class="link" class:active={$page.path === 'contact'}><a href="/{$localeContext}/contact">{$_("layout.header.nav.contact")}</a></li>
-            {:else}
-                <li><BurgerButton scrolled={y > 79}/></li>
-            {/if}
-        </ul>
-    </nav>
+<header class:scrolled aria-label="navigation principale">
+	<div class="bar container">
+		<a class="logo" href={`/${$localeStore}`} aria-label="ttvz — accueil">
+			<span aria-hidden="true">ttvz</span>
+		</a>
+
+		<nav class="anchors" aria-label="sections">
+			<a href={`/${$localeStore}#approche`}>{$_('nav.approach')}</a>
+			<a href={`/${$localeStore}#missions`}>{$_('nav.work')}</a>
+			<a href={`/${$localeStore}#contact`}>{$_('nav.contact')}</a>
+		</nav>
+
+		<div class="right">
+			<div class="lang" role="group" aria-label="langue">
+				<button
+					type="button"
+					class:active={$localeStore === 'fr'}
+					on:click={() => setLocale('fr')}>FR</button
+				>
+				<span aria-hidden="true">·</span>
+				<button
+					type="button"
+					class:active={$localeStore === 'en'}
+					on:click={() => setLocale('en')}>EN</button
+				>
+			</div>
+			<a class="cta" href={$_('contact.calendly')} target="_blank" rel="noopener">
+				{$_('nav.book')}
+			</a>
+		</div>
+	</div>
 </header>
 
 <style lang="scss">
-  @keyframes scrollMenuAnimation {
-    from {background-color: #FFF;}
-  }
-    header{
-      position: fixed;
-      width:100%;
-      border-bottom: 1px solid #CCC;
-      height:79px;
-      background-color:#FFF;
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 50;
+		background: rgba(255, 255, 255, 0);
+		backdrop-filter: blur(0);
+		transition:
+			background 0.25s var(--ease-out),
+			backdrop-filter 0.25s var(--ease-out),
+			border-color 0.25s var(--ease-out);
+		border-bottom: 1px solid transparent;
+	}
 
-      &.scrolled{
-        background-color:#000;
-        border-bottom: 1px solid #000;
-        animation-name: scrollMenuAnimation;
-        animation-duration: 1s;
-        a{
-          color:#FFF;
-        }
-        .logo a{
-          color:#FCF351;
-        }
-        ul.links-wrapper{
-          li.link {
-            &::before {
-              color: #000;
-            }
-            &.active {
-              &::before {
-                color:#FFF;
-              }
-            }
-          }
-        }
-      }
-      nav{
-        display: flex;
-        width: 75vw;
-        margin: 0 auto;
-        justify-content: space-between;
-        @media (max-width: 1250px) {
-          width: 90vw;
-        }
-      }
-    }
+	header.scrolled {
+		background: rgba(255, 255, 255, 0.85);
+		backdrop-filter: saturate(180%) blur(12px);
+		border-bottom-color: var(--color-rule);
+	}
 
-    .logo{
-        font-size: 40px;
-        line-height: 70px;
-    }
+	.bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		height: 72px;
+	}
 
-    ul.links-wrapper {
-        display:flex;
-        margin: 0;
-      li.link{
-        list-style: none;
-        margin-right: 5vw;
-        font-size: 22px;
-        line-height: 70px;
-        &::before {
-            content: ' \25CF';
-            font-size: 10px;
-            margin-right: 5px;
-            color:#FFF;
-        }
-        &.active {
-            &::before {
-              color:#000;
-            }
-        }
-      }
-    }
+	.logo {
+		font-weight: 700;
+		font-size: 1.35rem;
+		letter-spacing: -0.02em;
+		color: var(--color-text);
+	}
+
+	.logo span {
+		color: var(--color-accent);
+	}
+
+	.anchors {
+		display: none;
+		gap: 2rem;
+	}
+
+	.anchors a {
+		font-size: 0.95rem;
+		color: var(--color-text-soft);
+	}
+
+	.anchors a:hover {
+		color: var(--color-accent);
+	}
+
+	.right {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+	}
+
+	.lang {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+	}
+
+	.lang button {
+		font-weight: 400;
+		color: var(--color-text-muted);
+		letter-spacing: 0.05em;
+	}
+
+	.lang button.active {
+		color: var(--color-text);
+		font-weight: 500;
+	}
+
+	.lang button:hover {
+		color: var(--color-accent);
+	}
+
+	.cta {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.55rem 1rem;
+		background: var(--color-text);
+		color: #fff;
+		font-size: 0.9rem;
+		font-weight: 500;
+		border-radius: var(--radius-sm);
+		transition: background 0.18s var(--ease-out);
+	}
+
+	.cta:hover {
+		background: var(--color-accent);
+	}
+
+	@media (min-width: 820px) {
+		.anchors {
+			display: flex;
+		}
+	}
+
+	@media (max-width: 520px) {
+		.cta {
+			display: none;
+		}
+	}
 </style>

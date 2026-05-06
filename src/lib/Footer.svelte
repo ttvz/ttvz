@@ -1,58 +1,59 @@
 <script>
-    import { locale, _ } from "svelte-i18n"
-    import Icon from 'svelte-fa'
-    import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-    import { goto } from '$app/navigation';
-    import {getContext} from "svelte";
-    import { persisted } from 'svelte-persisted-store'
-
-    let localeContext = getContext('localeContext');
-    const preferences = persisted('preferences', null)
-
-    function updateLocale(l) {
-        localeContext.set(l)
-        locale.set(l);
-        goto('/' + l);
-
-        preferences.set({
-            locale: l
-        })
-    }
-
+	import { _ } from 'svelte-i18n';
+	const year = new Date().getFullYear();
 </script>
+
 <footer>
-    <a href="/{$_('layout.footer.pdf-link')}" download><span class="material-icons"><Icon icon={faArrowRight}/></span> {$_("layout.footer.download")}</a>
-    <div>
-        <button class:active={$locale === 'en-EN'} on:click={() => updateLocale('en-EN')}>en</button> |
-        <button class:active={$locale === 'fr-FR'} on:click={() => updateLocale('fr-FR')}>fr</button>
-    </div>
+	<div class="container inner">
+		<div class="brand">
+			<span class="logo">ttvz</span>
+			<span class="muted">© Thibaut Valez {year}</span>
+		</div>
+		<nav class="links" aria-label="liens secondaires">
+			<a href={$_('contact.calendly')} target="_blank" rel="noopener">Calendly</a>
+			<a href={$_('contact.linkedin')} target="_blank" rel="noopener">LinkedIn</a>
+		</nav>
+	</div>
 </footer>
 
-<style lang="scss">
-    footer {
-      flex:0;
-      width:75vw;
-      margin: auto;
-      border-top: 1px solid #CCC;
-      padding:40px 0 10px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
-    a {
-      text-transform: uppercase;
-    }
-    button{
-      text-transform: uppercase;
-      border: none;
-      background: none;
-      cursor: pointer;
-      font-size: 16px;
-      &.active{
-        font-weight: 800;
-      }
-    }
-    .material-icons{
-      font-size: 14px;
-    }
+<style>
+	footer {
+		border-top: 1px solid var(--color-rule);
+		padding-block: 2rem;
+		margin-top: 4rem;
+		background: var(--color-bg);
+	}
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+	}
+	.brand {
+		display: flex;
+		align-items: baseline;
+		gap: 1rem;
+	}
+	.logo {
+		color: var(--color-accent);
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
+	.muted {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+	}
+	.links {
+		display: flex;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+	}
+	.links a {
+		font-size: 0.85rem;
+		color: var(--color-text-soft);
+	}
+	.links a:hover {
+		color: var(--color-accent);
+	}
 </style>

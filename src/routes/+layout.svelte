@@ -1,87 +1,65 @@
 <script>
-    import "@fontsource/jost";
-    import "@fontsource/prompt";
+	import '@fontsource/jost/300.css';
+	import '@fontsource/jost/400.css';
+	import '@fontsource/jost/500.css';
+	import '@fontsource/jost/600.css';
+	import '@fontsource/jost/700.css';
+	import '@fontsource/jost/400-italic.css';
 
-    import { setContext } from 'svelte';
-    import { writable, get } from 'svelte/store';
-    import { addMessages, init, getLocaleFromNavigator } from "svelte-i18n";
-    import { persisted } from 'svelte-persisted-store'
+	import { setContext } from 'svelte';
+	import { writable } from 'svelte/store';
+	import { addMessages, init, locale as i18nLocale } from 'svelte-i18n';
+	import { page } from '$app/stores';
 
-    import Header from "$lib/Header.svelte";
-    import Footer from "$lib/Footer.svelte";
-    import MobileMenu from "$lib/MobileMenu.svelte";
+	import Header from '$lib/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
 
-    import en from "../lang/en.json";
-    import fr from "../lang/fr.json";
+	import en from '../lang/en.json';
+	import fr from '../lang/fr.json';
 
-    const defaultLocale = getLocaleFromNavigator();
+	import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from '$lib/i18n.js';
 
-    const mobile_menu = writable();
-    $: mobile_menu.set(false);
-    const locale =  writable();
-    const preferences = persisted('preferences', {
-        locale: 'fr-FR'
-    });
-    if (get(preferences).locale){
-        $: locale.set(get(preferences).locale);
-    } else {
-        preferences.set({
-            locale: defaultLocale
-        })
-        $: locale.set(defaultLocale);
-    }
-    setContext('localeContext', locale);
+	addMessages('fr', fr);
+	addMessages('en', en);
+	init({ fallbackLocale: DEFAULT_LOCALE, initialLocale: DEFAULT_LOCALE });
 
-    setContext('mobile_menu', mobile_menu);
-    addMessages("en", en);
-    addMessages("fr", fr);
-    init({
-        fallbackLocale: 'fr',
-        initialLocale: $locale,
-    });
+	const localeStore = writable(DEFAULT_LOCALE);
+	setContext('locale', localeStore);
+
+	$: {
+		const slug = $page.params?.slug;
+		const next = SUPPORTED_LOCALES.includes(slug) ? slug : DEFAULT_LOCALE;
+		localeStore.set(next);
+		i18nLocale.set(next);
+	}
 </script>
 
-<Header/>
-{#if $mobile_menu}
-    <MobileMenu/>
-{/if}
-<main>
-    <slot></slot>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<Header />
+<main id="main" tabindex="-1">
+	<slot />
 </main>
+<Footer />
 
-<Footer/>
-
-<style lang="scss" global>
-  :global(body) {
-    margin: 0;
-    overflow-x: hidden;
-  }
-  :global(#svelte){
-    display:flex;
-    flex-direction:column;
-    height: 100vh;
-  }
-  :global(a) {
-    text-decoration: none;
-    color: #000;
-  }
-  :global(li) {
-    list-style: none;
-  }
-  :global(h1,h2,h3,h4,h5,h6) {
-    font-family: 'Jost', sans-serif;
-    font-weight:500;
-    margin: 0;
-    padding: 0;
-  }
-  :global(p,li, a, b, button) {
-    font-family: 'Jost', sans-serif;
-    font-weight:300;
-    margin: 0;
-    padding: 0;
-  }
-  main{
-    flex: 1;
-    padding-top: 80px;
-  }
+<style>
+	main {
+		display: block;
+		min-height: 60vh;
+		outline: none;
+	}
+	.skip-link {
+		position: absolute;
+		left: -9999px;
+		top: 0;
+		padding: 0.75rem 1rem;
+		background: var(--color-text);
+		color: #fff;
+		font-size: 0.95rem;
+		z-index: 999;
+		border-radius: var(--radius-sm);
+	}
+	.skip-link:focus {
+		left: 1rem;
+		top: 1rem;
+	}
 </style>

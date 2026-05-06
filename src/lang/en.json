@@ -1,75 +1,105 @@
 {
-  "layout": {
-    "header": {
-      "nav": {
-        "about": "About me",
-        "contact": "Contact",
-        "home": "Home"
-      }
-    },
-    "footer": {
-      "download": "download me",
-      "pdf-link": "profil-thibaut_valez.pdf"
-    }
-  },
-  "page": {
-    "home": {
-      "title": "Thibaut VALEZ | Scrum Master | Coaching | Continuous improvement",
-      "description": "Make innovatives ideas come true. Naturally digital and continuous improvement mindset.The only target of my skills is the succes of the project (business et team). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
-      "overview": {
-        "link-profile-photo": "photo-thibaut_valez.webp",
-        "alt-profile-photo": "thibaut VALEZ 2024",
-        "name": "Thibaut VALEZ",
-        "role": "Scrum Master | Coaching",
-        "status": "Freelance",
-        "pitch": "Make innovatives ideas come true. Naturally digital and continuous improvement mindset.The only target of my skills is the succes of the project (business et team). LEAN Startup, Growth, Agile (Safe & Scrum), Innovation.",
-        "more": "Learn more",
-        "or": "or",
-        "city": "living in Lyon,<br>France",
-        "background": "Some background",
-        "job": "My jobs",
-        "socials": "Socials",
-        "linkedin": "Linkedin",
-        "twitter": "Twitter",
-        "github": "Github",
-        "background_article": "10y : from developer to Scrum Master (pdf)"
-      }
-    },
-    "about": {
-      "title": "Thibaut VALEZ | Learn more",
-      "description": "Three main skills to launch and empower your projects: Strategic thinking, Technical knowledge, Agile management",
-      "qa": {
-        "title": "Q&A",
-        "subtitle": "",
-        "question-a": "Product Manager ? Agile Coach ? you seem to have a technical background...",
-        "answer-a": "I wrote a complete article <a style=\\\"text-decoration: underline;\\\">here</a> about this subject (in french) and why my technical background is a strength in my Product Manager Job."
-      },
-      "skills": {
-        "title": "Three main skills<br>to launch and empower your projects",
-        "strategy-title": "Strategic thinking | Lean Startup",
-        "strategy": "My vision about Product Management is based on Lean Startup. I experienced it in various context. I use OKR to set goals and visual management tools as Value Stream Map to pilot. Then, with metrics like AARRR and feedbacks, accelerate and make the product grow.<br>From an idea to a concrete product that fits the market. From vision to task management. From roadmap to customer satisfaction survey. From Business Model Canvas to Growth. Let's get your product fly !<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Club Citrus, Digisthesia</span>",
-        "agile-title": "Agile Management | Continuous improvement",
-        "agile": "To help teams and people to improve with SCRUM and to evangelize agile manifesto are part of my everyday life since many years now. I like to work in a continuous improvement and agile environment.<br>From Components teams to Feature teams, remove obstacles, conducts various meetings, find a great tempo and promote human interactions are the keys in this approach.<br>Scrum Master and Product Owner certified (2016). SAFe 5 Agilist certified (January 2022).<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Loyalty Company, Kering, Keyrus, Aktome</span>",
-        "technical-title": "Technical knowledge",
-        "technical": "With a background in web and mobile development and as a DevOps promoter, I have good undestanding of what the team needs to be efficient. I also can translate the tech languages from dev and data teams to business ones (and vice-versa). I evolved in various tech environments: from Microsoft to On Premise and AWS, from Javascript (React, Svelte, Backbone) to NodeJS or PHP, from web analytics to search engines. With this skills, I can identify innovative business levers.<br><br><span style='font-weight: 100;'>My most importants experiences in this domain: Michelin, L'Oreal, SNCF</span>"
-      }
-    },
-    "contact": {
-      "title": "Thibaut VALEZ | Contact me",
-      "description": "Need your project to fly or a view from top ? Need to know more ? Contact me.",
-      "localization": "France | Switzerland",
-      "email": "thibaut.valez@gmail.com",
-      "social-media": "Linkedin"
-    },
-    "error": {
-      "picture": "/lost-world-picture.png",
-      "alt-picture": "Lost world picture",
-      "link-home": "Back to home",
-      "link-resume": "Download me",
-      "link-about": "About me",
-      "link-contact": "Contact me",
-      "infos-first": "Ooops ! you've discovered the lost world !",
-      "infos-second": "Back to marked trail :"
-    }
-  }
+	"seo": {
+		"title": "Thibaut Valez — Product Performance · Delivery · Change Management",
+		"description": "Independent product consultant. I help CPOs, Heads of Product and leaders ship products that matter — value, execution, team buy-in."
+	},
+	"nav": {
+		"approach": "Approach",
+		"work": "Work",
+		"contact": "Contact",
+		"book": "Book a call"
+	},
+	"contact": {
+		"linkedin": "https://linkedin.com/in/thibaut-valez",
+		"calendly": "https://calendly.com/thibaut-valez/30min"
+	},
+	"hero": {
+		"eyebrow": "Thibaut Valez · Lyon, France",
+		"title_a": "Product Performance",
+		"title_b": "Delivery",
+		"title_c": "Change Management",
+		"lead": "Shipping a product that matters means aligning three levers: value, execution, team buy-in.",
+		"cta_primary": "Book a call",
+		"cta_secondary": "See my LinkedIn"
+	},
+	"kpi": {
+		"eyebrow": "Impact",
+		"a_value": "−40",
+		"a_unit": "%",
+		"a_label": "Time-to-market",
+		"a_detail": "on average across the engagements I lead",
+		"b_value": "×2",
+		"b_label": "Predictability",
+		"b_detail": "on the teams I work with",
+		"c_value": "13",
+		"c_unit": "yrs",
+		"c_label": "In product",
+		"c_detail": "including 4.5 years as an engineer"
+	},
+	"approach": {
+		"eyebrow": "Approach",
+		"claim_a": "A strategy that doesn't ship is worth nothing.",
+		"claim_b": "Neither is delivery on the wrong priority.",
+		"claim_c": "Neither is a transformation forced on the team.",
+		"lead": "My job: align those three levers on the ground. Diagnosis, prioritization, execution. And a clean handover so the teams stay in control when I leave."
+	},
+	"audience": {
+		"eyebrow": "Who I work with",
+		"persona_1": "CPO",
+		"persona_2": "Head of Product",
+		"persona_3": "Executives",
+		"persona_4": "Transformation managers",
+		"qualification": "The product is moving too slow. Teams are busy but not shipping. A transformation is stalling. You're looking for someone who goes from diagnosis to execution — not an audit that ends up as a forgotten slide deck."
+	},
+	"formats": {
+		"eyebrow": "How I engage",
+		"punch_title": "Punch mission",
+		"punch_duration": "4 to 12 weeks",
+		"punch_description": "Diagnosis, action plan, momentum back. For unlocking a stuck situation and getting traction quickly.",
+		"strategic_title": "Strategic engagement",
+		"strategic_duration": "3 to 12 months",
+		"strategic_description": "Building lasting structure for delivery, business impact and value creation. For scaling cleanly without breaking what already works."
+	},
+	"missions": {
+		"eyebrow": "Selected work",
+		"m1_client": "ONLIZ",
+		"m1_meta": "Fintech · Lyon",
+		"m1_period": "2023 — 2025",
+		"m1_metric": "Time-to-market −40%. Predictability ×2.",
+		"m1_description": "Built delivery structure and supported the product team from vision to execution.",
+		"m2_client": "Crédit Agricole T&S",
+		"m2_meta": "Banking · Transformation at scale",
+		"m2_period": "2022 — 2023",
+		"m2_metric": "7 squads coached in parallel.",
+		"m2_description": "Set up a coherent delivery framework across multiple teams running in parallel.",
+		"m3_client": "Kering",
+		"m3_meta": "Luxury · International (via Keyrus)",
+		"m3_period": "2017 — 2018",
+		"m3_metric": "Hong Kong pilot → 5 countries · 3 continents.",
+		"m3_description": "Launched a pilot project from Hong Kong, then operational rollout across five countries on three continents.",
+		"others_label": "Also",
+		"others_list": "L'Oréal · SNCF · Michelin · METRO · PepsiCo"
+	},
+	"ines": {
+		"eyebrow": "In parallel",
+		"name": "Inès",
+		"tagline": "AI product for residential property managers.",
+		"description": "I'm also building Inès, an AI product that automates document management and customer relations for property syndics. Market of 800,000 condominiums in France. Commercial launch planned for September 2026. It keeps me sharp on founder mode and AI products in real-world conditions.",
+		"link_label": "Visit site"
+	},
+	"ai": {
+		"eyebrow": "Focus",
+		"title": "AI transformations, pragmatic.",
+		"description": "No hype, no doom. Aligning AI use cases with business value and team buy-in. On the ground: the POCs that actually ship, the actual trade-offs, the actual resistance."
+	},
+	"final": {
+		"eyebrow": "Contact",
+		"title": "Let's talk about your situation.",
+		"lead": "A 30-minute call to understand where you stand and see if I can help. No strings attached.",
+		"cta": "Book a call",
+		"label_calendly": "Calendly",
+		"label_linkedin": "LinkedIn",
+		"calendly_display": "calendly.com/thibaut-valez/30min",
+		"linkedin_display": "linkedin.com/in/thibaut-valez"
+	}
 }
