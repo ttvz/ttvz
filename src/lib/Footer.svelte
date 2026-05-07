@@ -19,8 +19,8 @@
 <style>
 	footer {
 		border-top: 1px solid var(--color-rule);
-		padding-block: 2rem;
-		margin-top: 4rem;
+		padding-block: 1.5rem;
+		margin-top: 2rem;
 		background: var(--color-bg);
 	}
 	.inner {
@@ -36,7 +36,7 @@
 		gap: 1rem;
 	}
 	.logo {
-		color: var(--color-accent);
+		color: var(--color-text);
 		font-weight: 700;
 		letter-spacing: -0.02em;
 	}

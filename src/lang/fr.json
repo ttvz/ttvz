@@ -18,7 +18,7 @@
 		"title_a": "Performance Produit",
 		"title_b": "Delivery",
 		"title_c": "Conduite du changement",
-		"lead": "Faire décoller un produit, c'est aligner trois leviers : la valeur, l'exécution, l'embarquement des équipes.",
+		"lead": "Mon métier : aligner trois leviers pour qu'un produit décolle — la valeur, l'exécution, l'embarquement des équipes.",
 		"cta_primary": "Prendre RDV",
 		"cta_secondary": "Voir mon profil LinkedIn"
 	},
@@ -28,20 +28,28 @@
 		"a_unit": "%",
 		"a_label": "Time-to-Market",
 		"a_detail": "en moyenne sur les missions où j'interviens",
-		"b_value": "×2",
+		"b_value": "≈ ×2",
 		"b_label": "Prédictibilité",
 		"b_detail": "sur les équipes que j'accompagne",
 		"c_value": "13",
 		"c_unit": "ans",
 		"c_label": "Expérience produit",
-		"c_detail": "dont 4,5 ans côté développement"
+		"c_detail": "dont 4,5 ans côté développement",
+		"d_value": "5",
+		"d_unit": "pays",
+		"d_label": "Coordination",
+		"d_detail": "équipes réparties sur 3 continents",
+		"e_value": "+30",
+		"e_unit": "%",
+		"e_label": "Business value priorisée",
+		"e_detail": "sur les roadmaps que je redessine"
 	},
 	"approach": {
 		"eyebrow": "Approche",
-		"claim_a": "Une stratégie qui ne se livre pas ne vaut rien.",
-		"claim_b": "Un delivery sur la mauvaise priorité non plus.",
-		"claim_c": "Une transformation imposée non plus.",
-		"lead": "Mon job : aligner ces trois leviers sur le terrain. Diagnostic, priorisation, exécution. Et un transfert propre pour que les équipes gardent la main quand je m'en vais."
+		"claim_a": "Une stratégie qui ne se livre pas, ça reste un slide.",
+		"claim_b": "Un delivery sur la mauvaise priorité, c'est de l'agitation.",
+		"claim_c": "Une transformation imposée, c'est de la résistance.",
+		"lead": "Concrètement : diagnostic, priorisation, exécution. Et un transfert propre pour que les équipes gardent la main quand je m'en vais."
 	},
 	"audience": {
 		"eyebrow": "Pour qui",

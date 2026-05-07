@@ -18,7 +18,7 @@
 		"title_a": "Product Performance",
 		"title_b": "Delivery",
 		"title_c": "Change Management",
-		"lead": "Shipping a product that matters means aligning three levers: value, execution, team buy-in.",
+		"lead": "My craft: aligning three levers so a product takes off — value, execution, team buy-in.",
 		"cta_primary": "Book a call",
 		"cta_secondary": "See my LinkedIn"
 	},
@@ -28,20 +28,28 @@
 		"a_unit": "%",
 		"a_label": "Time-to-market",
 		"a_detail": "on average across the engagements I lead",
-		"b_value": "×2",
+		"b_value": "≈ ×2",
 		"b_label": "Predictability",
 		"b_detail": "on the teams I work with",
 		"c_value": "13",
 		"c_unit": "yrs",
 		"c_label": "In product",
-		"c_detail": "including 4.5 years as an engineer"
+		"c_detail": "including 4.5 years as an engineer",
+		"d_value": "5",
+		"d_unit": "countries",
+		"d_label": "Coordination",
+		"d_detail": "teams spread across 3 continents",
+		"e_value": "+30",
+		"e_unit": "%",
+		"e_label": "Business value prioritised",
+		"e_detail": "on the roadmaps I rebuild"
 	},
 	"approach": {
 		"eyebrow": "Approach",
-		"claim_a": "A strategy that doesn't ship is worth nothing.",
-		"claim_b": "Neither is delivery on the wrong priority.",
-		"claim_c": "Neither is a transformation forced on the team.",
-		"lead": "My job: align those three levers on the ground. Diagnosis, prioritization, execution. And a clean handover so the teams stay in control when I leave."
+		"claim_a": "A strategy that doesn't ship is just a slide.",
+		"claim_b": "Delivery on the wrong priority is just busywork.",
+		"claim_c": "A top-down transformation breeds resistance.",
+		"lead": "In practice: diagnosis, prioritisation, execution. And a clean handover so teams stay in control when I leave."
 	},
 	"audience": {
 		"eyebrow": "Who I work with",

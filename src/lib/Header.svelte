@@ -90,7 +90,7 @@
 	}
 
 	.logo span {
-		color: var(--color-accent);
+		color: var(--color-text);
 	}
 
 	.anchors {

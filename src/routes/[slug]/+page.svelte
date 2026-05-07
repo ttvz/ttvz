@@ -48,6 +48,18 @@
 			detail: $_('kpi.b_detail')
 		},
 		{
+			value: $_('kpi.e_value'),
+			unit: $_('kpi.e_unit'),
+			label: $_('kpi.e_label'),
+			detail: $_('kpi.e_detail')
+		},
+		{
+			value: $_('kpi.d_value'),
+			unit: $_('kpi.d_unit'),
+			label: $_('kpi.d_label'),
+			detail: $_('kpi.d_detail')
+		},
+		{
 			value: $_('kpi.c_value'),
 			unit: $_('kpi.c_unit'),
 			label: $_('kpi.c_label'),
@@ -95,7 +107,7 @@
 		<h1 class="hero__title">
 			<span class="hero__line">{$_('hero.title_a')}</span>
 			<span class="hero__line hero__line--italic">{$_('hero.title_b')}</span>
-			<span class="hero__line">{$_('hero.title_c')}</span>
+			<span class="hero__line hero__line--light">{$_('hero.title_c')}</span>
 		</h1>
 		<p class="hero__lead">{$_('hero.lead')}</p>
 		<div class="hero__cta">
@@ -266,8 +278,8 @@
 
 <style>
 	.hero {
-		padding-top: clamp(7rem, 14vw, 11rem);
-		padding-bottom: clamp(5rem, 10vw, 8rem);
+		padding-top: clamp(5.5rem, 9vw, 7.5rem);
+		padding-bottom: clamp(2.5rem, 5vw, 4rem);
 	}
 
 	.hero__inner {
@@ -299,6 +311,20 @@
 		font-weight: 400;
 		font-style: italic;
 		color: var(--color-text-soft);
+	}
+
+	.hero__line--light {
+		font-weight: 300;
+		letter-spacing: -0.015em;
+	}
+
+	.hero__line--light::after {
+		content: '';
+		display: block;
+		width: 2.4rem;
+		height: 1px;
+		background: var(--color-accent);
+		margin-top: 0.35rem;
 	}
 
 	.hero__lead {
@@ -341,25 +367,25 @@
 	}
 
 	.kpi__eyebrow {
-		margin-bottom: clamp(2rem, 4vw, 3rem);
+		margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 	}
 
 	.kpi__grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: clamp(2.5rem, 5vw, 4rem);
+		gap: clamp(2rem, 4vw, 3rem);
 		border-top: 1px solid var(--color-rule);
-		padding-top: clamp(2rem, 4vw, 3rem);
+		padding-top: clamp(1.5rem, 3vw, 2.25rem);
 	}
 
 	.kpi__item {
 		display: flex;
 		flex-direction: column;
-		gap: 0.6rem;
+		gap: 0.5rem;
 	}
 
 	.kpi__value {
-		font-size: clamp(3rem, 5vw + 1rem, 5rem);
+		font-size: clamp(2.4rem, 3.4vw + 1rem, 3.8rem);
 		font-weight: 500;
 		color: var(--color-accent);
 		letter-spacing: -0.04em;
@@ -395,8 +421,14 @@
 
 	@media (min-width: 720px) {
 		.kpi__grid {
-			grid-template-columns: repeat(3, 1fr);
-			gap: clamp(2rem, 4vw, 4rem);
+			grid-template-columns: repeat(2, 1fr);
+			gap: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.5rem);
+		}
+	}
+
+	@media (min-width: 960px) {
+		.kpi__grid {
+			grid-template-columns: repeat(5, 1fr);
 		}
 	}
 
@@ -504,6 +536,7 @@
 		letter-spacing: -0.01em;
 		padding: clamp(1.1rem, 2vw, 1.5rem) 0;
 		border-bottom: 1px solid var(--color-rule);
+		text-align: center;
 	}
 
 	.audience__qualification {
@@ -519,7 +552,7 @@
 			grid-template-columns: repeat(4, 1fr);
 		}
 		.audience__list li {
-			padding: clamp(1.4rem, 2.5vw, 2rem) clamp(1rem, 2vw, 1.5rem) clamp(1.4rem, 2.5vw, 2rem) 0;
+			padding: clamp(1.4rem, 2.5vw, 2rem) clamp(1rem, 2vw, 1.5rem);
 			border-bottom: 0;
 			border-right: 1px solid var(--color-rule);
 		}
