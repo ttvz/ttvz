@@ -23,15 +23,15 @@ export function personLd() {
 			{
 				'@type': 'ProfessionalService',
 				'@id': `${SITE_URL}#ttvz`,
-				name: 'TTVZ — Conseil produit',
+				name: 'TTVZ - Conseil produit',
 				url: SITE_URL,
 				areaServed: ['FR', 'CH', 'EU'],
 				founder: { '@id': `${SITE_URL}#thibaut` },
 				knowsAbout: [
 					'Product management',
-					'Delivery',
-					'Change management',
-					'AI transformations'
+					'Conduite du changement',
+					'Discovery produit',
+					'Priorisation par la valeur'
 				]
 			}
 		]
