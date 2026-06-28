@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>404 — ttvz</title>
+	<title>404 - ttvz</title>
 	<meta name="robots" content="noindex" />
 </svelte:head>
 

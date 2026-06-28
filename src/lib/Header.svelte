@@ -21,11 +21,12 @@
 
 <header class:scrolled aria-label="navigation principale">
 	<div class="bar container">
-		<a class="logo" href={`/${$localeStore}`} aria-label="ttvz — accueil">
+		<a class="logo" href={`/${$localeStore}`} aria-label="ttvz - accueil">
 			<span aria-hidden="true">ttvz</span>
 		</a>
 
 		<nav class="anchors" aria-label="sections">
+			<a href={`/${$localeStore}#offres`}>{$_('nav.offers')}</a>
 			<a href={`/${$localeStore}#approche`}>{$_('nav.approach')}</a>
 			<a href={`/${$localeStore}#missions`}>{$_('nav.work')}</a>
 			<a href={`/${$localeStore}#contact`}>{$_('nav.contact')}</a>
@@ -33,16 +34,12 @@
 
 		<div class="right">
 			<div class="lang" role="group" aria-label="langue">
-				<button
-					type="button"
-					class:active={$localeStore === 'fr'}
-					on:click={() => setLocale('fr')}>FR</button
+				<button type="button" class:active={$localeStore === 'fr'} on:click={() => setLocale('fr')}
+					>FR</button
 				>
 				<span aria-hidden="true">·</span>
-				<button
-					type="button"
-					class:active={$localeStore === 'en'}
-					on:click={() => setLocale('en')}>EN</button
+				<button type="button" class:active={$localeStore === 'en'} on:click={() => setLocale('en')}
+					>EN</button
 				>
 			</div>
 			<a class="cta" href={$_('contact.calendly')} target="_blank" rel="noopener">

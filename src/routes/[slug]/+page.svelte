@@ -3,13 +3,26 @@
 	import { page } from '$app/stores';
 	import { SITE_URL, OG_IMAGE, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT, personLd } from '$lib/seo.js';
 
-	const INES_URL = '';
-
 	$: lang = $page.params?.slug === 'en' ? 'en' : 'fr';
 	$: canonical = `${SITE_URL}/${lang}`;
 	$: ogLocale = lang === 'fr' ? 'fr_FR' : 'en_US';
 	$: ogLocaleAlt = lang === 'fr' ? 'en_US' : 'fr_FR';
 	$: jsonLd = JSON.stringify(personLd());
+
+	$: offers = [
+		{
+			index: $_('offers.o1_index'),
+			title: $_('offers.o1_title'),
+			lead: $_('offers.o1_lead'),
+			description: $_('offers.o1_description')
+		},
+		{
+			index: $_('offers.o2_index'),
+			title: $_('offers.o2_title'),
+			lead: $_('offers.o2_lead'),
+			description: $_('offers.o2_description')
+		}
+	];
 
 	$: missions = [
 		{
@@ -32,38 +45,47 @@
 			period: $_('missions.m3_period'),
 			metric: $_('missions.m3_metric'),
 			description: $_('missions.m3_description')
+		},
+		{
+			client: $_('missions.m4_client'),
+			meta: $_('missions.m4_meta'),
+			period: $_('missions.m4_period'),
+			metric: $_('missions.m4_metric'),
+			description: $_('missions.m4_description')
 		}
 	];
 
-	$: kpis = [
+	$: facts = [
 		{
-			value: $_('kpi.a_value'),
-			unit: $_('kpi.a_unit'),
-			label: $_('kpi.a_label'),
-			detail: $_('kpi.a_detail')
+			value: $_('facts.a_value'),
+			unit: $_('facts.a_unit'),
+			label: $_('facts.a_label'),
+			detail: $_('facts.a_detail')
 		},
 		{
-			value: $_('kpi.b_value'),
-			label: $_('kpi.b_label'),
-			detail: $_('kpi.b_detail')
+			value: $_('facts.b_value'),
+			unit: $_('facts.b_unit'),
+			label: $_('facts.b_label'),
+			detail: $_('facts.b_detail')
 		},
 		{
-			value: $_('kpi.e_value'),
-			unit: $_('kpi.e_unit'),
-			label: $_('kpi.e_label'),
-			detail: $_('kpi.e_detail')
+			value: $_('facts.c_value'),
+			unit: $_('facts.c_unit'),
+			label: $_('facts.c_label'),
+			detail: $_('facts.c_detail')
+		}
+	];
+
+	$: labs = [
+		{
+			name: $_('labs.l1_name'),
+			tagline: $_('labs.l1_tagline'),
+			description: $_('labs.l1_description')
 		},
 		{
-			value: $_('kpi.d_value'),
-			unit: $_('kpi.d_unit'),
-			label: $_('kpi.d_label'),
-			detail: $_('kpi.d_detail')
-		},
-		{
-			value: $_('kpi.c_value'),
-			unit: $_('kpi.c_unit'),
-			label: $_('kpi.c_label'),
-			detail: $_('kpi.c_detail')
+			name: $_('labs.l2_name'),
+			tagline: $_('labs.l2_tagline'),
+			description: $_('labs.l2_description')
 		}
 	];
 </script>
@@ -89,7 +111,7 @@
 	<meta property="og:image" content={`${SITE_URL}${OG_IMAGE}`} />
 	<meta property="og:image:width" content={String(OG_IMAGE_WIDTH)} />
 	<meta property="og:image:height" content={String(OG_IMAGE_HEIGHT)} />
-	<meta property="og:image:alt" content="Thibaut Valez — Performance Produit · Delivery · Conduite du changement" />
+	<meta property="og:image:alt" content="Thibaut Valez - Conseil produit" />
 	<meta property="profile:first_name" content="Thibaut" />
 	<meta property="profile:last_name" content="Valez" />
 
@@ -104,11 +126,7 @@
 <section id="hero" class="hero">
 	<div class="container hero__inner">
 		<p class="eyebrow hero__eyebrow">{$_('hero.eyebrow')}</p>
-		<h1 class="hero__title">
-			<span class="hero__line">{$_('hero.title_a')}</span>
-			<span class="hero__line hero__line--italic">{$_('hero.title_b')}</span>
-			<span class="hero__line hero__line--light">{$_('hero.title_c')}</span>
-		</h1>
+		<h1 class="hero__title">{$_('hero.title')}</h1>
 		<p class="hero__lead">{$_('hero.lead')}</p>
 		<div class="hero__cta">
 			<a class="cta" href={$_('contact.calendly')} target="_blank" rel="noopener">
@@ -123,20 +141,20 @@
 	</div>
 </section>
 
-<section id="kpi" class="section section--cream kpi">
+<section id="offres" class="section section--cream offers">
 	<div class="container">
-		<p class="eyebrow kpi__eyebrow">{$_('kpi.eyebrow')}</p>
-		<ul class="kpi__grid">
-			{#each kpis as kpi}
-				<li class="kpi__item">
-					<span class="kpi__value">
-						{kpi.value}{#if kpi.unit}<span class="kpi__unit">{kpi.unit}</span>{/if}
-					</span>
-					<span class="kpi__label">{kpi.label}</span>
-					<span class="kpi__detail">{kpi.detail}</span>
-				</li>
+		<p class="eyebrow">{$_('offers.eyebrow')}</p>
+		<p class="offers__lead">{$_('offers.lead')}</p>
+		<div class="offers__grid">
+			{#each offers as offer}
+				<article class="offers__card">
+					<span class="offers__index">{offer.index}</span>
+					<h2 class="offers__title">{offer.title}</h2>
+					<p class="offers__card-lead">{offer.lead}</p>
+					<p class="offers__description">{offer.description}</p>
+				</article>
 			{/each}
-		</ul>
+		</div>
 	</div>
 </section>
 
@@ -148,46 +166,35 @@
 			<li class="approach__claim">{$_('approach.claim_b')}</li>
 			<li class="approach__claim">{$_('approach.claim_c')}</li>
 		</ol>
-		<p class="approach__lead">{$_('approach.lead')}</p>
-	</div>
-</section>
-
-<section id="audience" class="section section--cream audience">
-	<div class="container">
-		<p class="eyebrow">{$_('audience.eyebrow')}</p>
-		<ul class="audience__list">
-			<li>{$_('audience.persona_1')}</li>
-			<li>{$_('audience.persona_2')}</li>
-			<li>{$_('audience.persona_3')}</li>
-			<li>{$_('audience.persona_4')}</li>
-		</ul>
-		<p class="audience__qualification">{$_('audience.qualification')}</p>
-	</div>
-</section>
-
-<section id="formats" class="section formats">
-	<div class="container">
-		<p class="eyebrow">{$_('formats.eyebrow')}</p>
-		<div class="formats__grid">
-			<article class="formats__card">
-				<header class="formats__head">
-					<h2 class="formats__title">{$_('formats.punch_title')}</h2>
-					<span class="formats__duration">{$_('formats.punch_duration')}</span>
-				</header>
-				<p class="formats__description">{$_('formats.punch_description')}</p>
-			</article>
-			<article class="formats__card">
-				<header class="formats__head">
-					<h2 class="formats__title">{$_('formats.strategic_title')}</h2>
-					<span class="formats__duration">{$_('formats.strategic_duration')}</span>
-				</header>
-				<p class="formats__description">{$_('formats.strategic_description')}</p>
-			</article>
+		<div class="approach__method">
+			<p class="approach__lead">{$_('approach.lead')}</p>
+			<p class="approach__honesty">{$_('approach.honesty')}</p>
 		</div>
 	</div>
 </section>
 
-<section id="missions" class="section section--cream missions">
+<section id="facts" class="section section--cream facts">
+	<div class="container">
+		<p class="eyebrow facts__eyebrow">{$_('facts.eyebrow')}</p>
+		<ul class="facts__grid">
+			{#each facts as fact}
+				<li class="facts__item">
+					<span class="facts__value">
+						{fact.value}{#if fact.unit}<span class="facts__unit">{fact.unit}</span>{/if}
+					</span>
+					<span class="facts__label">{fact.label}</span>
+					<span class="facts__detail">{fact.detail}</span>
+				</li>
+			{/each}
+		</ul>
+		<p class="facts__certifs">
+			<span class="facts__certifs-label">{$_('facts.certifs_label')}</span>
+			<span class="facts__certifs-list">{$_('facts.certifs_list')}</span>
+		</p>
+	</div>
+</section>
+
+<section id="missions" class="section missions">
 	<div class="container">
 		<p class="eyebrow">{$_('missions.eyebrow')}</p>
 		<ol class="missions__list">
@@ -197,7 +204,9 @@
 					<div class="missions__body">
 						<header class="missions__head">
 							<h3 class="missions__client">{mission.client}</h3>
-							<span class="missions__period">{mission.period}</span>
+							{#if mission.period}
+								<span class="missions__period">{mission.period}</span>
+							{/if}
 						</header>
 						<p class="missions__meta">{mission.meta}</p>
 						<p class="missions__metric">{mission.metric}</p>
@@ -213,35 +222,18 @@
 	</div>
 </section>
 
-<section id="ines" class="section ines">
+<section id="labs" class="section section--cream labs">
 	<div class="container">
-		<p class="eyebrow">{$_('ines.eyebrow')}</p>
-		<div class="ines__grid">
-			<div class="ines__head">
-				<h2 class="ines__name">{$_('ines.name')}</h2>
-				<p class="ines__tagline">{$_('ines.tagline')}</p>
-			</div>
-			<div class="ines__body">
-				<p class="ines__description">{$_('ines.description')}</p>
-				{#if INES_URL}
-					<a class="ines__link" href={INES_URL} target="_blank" rel="noopener">
-						{$_('ines.link_label')}
-						<span aria-hidden="true">↗</span>
-					</a>
-				{/if}
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="ai" class="section section--cream ai">
-	<div class="container">
-		<div class="ai__grid">
-			<div class="ai__head">
-				<p class="eyebrow">{$_('ai.eyebrow')}</p>
-				<h2 class="ai__title">{$_('ai.title')}</h2>
-			</div>
-			<p class="ai__description">{$_('ai.description')}</p>
+		<p class="eyebrow">{$_('labs.eyebrow')}</p>
+		<p class="labs__lead">{$_('labs.lead')}</p>
+		<div class="labs__grid">
+			{#each labs as lab}
+				<article class="labs__card">
+					<h2 class="labs__name">{lab.name}</h2>
+					<p class="labs__tagline">{lab.tagline}</p>
+					<p class="labs__description">{lab.description}</p>
+				</article>
+			{/each}
 		</div>
 	</div>
 </section>
@@ -299,39 +291,23 @@
 		letter-spacing: -0.025em;
 		line-height: 1.05;
 		margin: 0;
-		display: flex;
-		flex-direction: column;
+		max-width: 18ch;
 	}
 
-	.hero__line {
-		display: block;
-	}
-
-	.hero__line--italic {
-		font-weight: 400;
-		font-style: italic;
-		color: var(--color-text-soft);
-	}
-
-	.hero__line--light {
-		font-weight: 300;
-		letter-spacing: -0.015em;
-	}
-
-	.hero__line--light::after {
+	.hero__title::after {
 		content: '';
 		display: block;
 		width: 2.4rem;
 		height: 1px;
 		background: var(--color-accent);
-		margin-top: 0.35rem;
+		margin-top: clamp(1rem, 2vw, 1.5rem);
 	}
 
 	.hero__lead {
 		font-size: clamp(1.05rem, 0.7vw + 0.9rem, 1.3rem);
 		font-weight: 400;
 		line-height: 1.5;
-		max-width: 38ch;
+		max-width: 42ch;
 		color: var(--color-text-soft);
 		margin: 0;
 	}
@@ -366,72 +342,6 @@
 		transform: translateX(3px);
 	}
 
-	.kpi__eyebrow {
-		margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
-	}
-
-	.kpi__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: clamp(2rem, 4vw, 3rem);
-		border-top: 1px solid var(--color-rule);
-		padding-top: clamp(1.5rem, 3vw, 2.25rem);
-	}
-
-	.kpi__item {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.kpi__value {
-		font-size: clamp(2.4rem, 3.4vw + 1rem, 3.8rem);
-		font-weight: 500;
-		color: var(--color-accent);
-		letter-spacing: -0.04em;
-		line-height: 0.95;
-		font-feature-settings: 'tnum' 1, 'lnum' 1;
-		display: flex;
-		align-items: baseline;
-		gap: 0.15em;
-	}
-
-	.kpi__unit {
-		font-size: 0.5em;
-		font-weight: 500;
-		letter-spacing: 0.02em;
-		color: var(--color-accent);
-	}
-
-	.kpi__label {
-		font-size: 0.78rem;
-		font-weight: 500;
-		text-transform: uppercase;
-		letter-spacing: 0.18em;
-		color: var(--color-text);
-		margin-top: 0.4rem;
-	}
-
-	.kpi__detail {
-		font-size: 0.95rem;
-		color: var(--color-text-soft);
-		max-width: 32ch;
-		line-height: 1.5;
-	}
-
-	@media (min-width: 720px) {
-		.kpi__grid {
-			grid-template-columns: repeat(2, 1fr);
-			gap: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.5rem);
-		}
-	}
-
-	@media (min-width: 960px) {
-		.kpi__grid {
-			grid-template-columns: repeat(5, 1fr);
-		}
-	}
-
 	@media (prefers-reduced-motion: no-preference) {
 		.hero__eyebrow,
 		.hero__title,
@@ -458,6 +368,82 @@
 		to {
 			opacity: 1;
 			transform: translateY(0);
+		}
+	}
+
+	/* ── Offers ─────────────────────────────────────── */
+
+	.offers .container {
+		display: grid;
+		gap: clamp(1.5rem, 3vw, 2.25rem);
+	}
+
+	.offers__lead {
+		font-size: clamp(1.2rem, 1.2vw + 0.9rem, 1.6rem);
+		font-weight: 400;
+		line-height: 1.35;
+		letter-spacing: -0.01em;
+		color: var(--color-text);
+		max-width: 30ch;
+		margin: 0;
+	}
+
+	.offers__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		border-top: 1px solid var(--color-rule);
+	}
+
+	.offers__card {
+		display: grid;
+		gap: 0.85rem;
+		padding: clamp(1.75rem, 3.5vw, 2.75rem) 0;
+		border-bottom: 1px solid var(--color-rule);
+		align-content: start;
+	}
+
+	.offers__index {
+		font-size: 0.78rem;
+		font-weight: 500;
+		letter-spacing: 0.18em;
+		color: var(--color-accent);
+		font-feature-settings:
+			'tnum' 1,
+			'lnum' 1;
+	}
+
+	.offers__title {
+		font-size: clamp(1.5rem, 1.8vw + 0.9rem, 2.2rem);
+		font-weight: 500;
+		letter-spacing: -0.015em;
+		line-height: 1.15;
+		margin: 0;
+	}
+
+	.offers__card-lead {
+		font-size: 1.1rem;
+		font-weight: 500;
+		color: var(--color-text);
+		line-height: 1.4;
+		margin: 0;
+		max-width: 38ch;
+	}
+
+	.offers__description {
+		font-size: 1.02rem;
+		line-height: 1.6;
+		color: var(--color-text-soft);
+		margin: 0;
+		max-width: 46ch;
+	}
+
+	@media (min-width: 820px) {
+		.offers__grid {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: clamp(2rem, 5vw, 4.5rem);
+		}
+		.offers__card {
+			border-bottom: 0;
 		}
 	}
 
@@ -502,125 +488,122 @@
 		font-weight: 500;
 		letter-spacing: 0.18em;
 		color: var(--color-accent);
-		font-feature-settings: 'tnum' 1, 'lnum' 1;
+		font-feature-settings:
+			'tnum' 1,
+			'lnum' 1;
 		padding-top: 0.5em;
 	}
 
-	.approach__lead {
-		max-width: 60ch;
-		font-size: 1.05rem;
-		color: var(--color-text-soft);
-		line-height: 1.6;
-		margin: 0;
-	}
-
-	/* ── Audience ───────────────────────────────────── */
-
-	.audience .container {
-		display: grid;
-		gap: clamp(2.5rem, 4vw, 3.5rem);
-	}
-
-	.audience__list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: grid;
-		grid-template-columns: 1fr;
-		border-top: 1px solid var(--color-rule);
-	}
-
-	.audience__list li {
-		font-size: clamp(1.3rem, 1.4vw + 0.9rem, 1.85rem);
-		font-weight: 500;
-		letter-spacing: -0.01em;
-		padding: clamp(1.1rem, 2vw, 1.5rem) 0;
-		border-bottom: 1px solid var(--color-rule);
-		text-align: center;
-	}
-
-	.audience__qualification {
-		max-width: 64ch;
-		font-size: 1.05rem;
-		color: var(--color-text-soft);
-		line-height: 1.6;
-		margin: 0;
-	}
-
-	@media (min-width: 720px) {
-		.audience__list {
-			grid-template-columns: repeat(4, 1fr);
-		}
-		.audience__list li {
-			padding: clamp(1.4rem, 2.5vw, 2rem) clamp(1rem, 2vw, 1.5rem);
-			border-bottom: 0;
-			border-right: 1px solid var(--color-rule);
-		}
-		.audience__list li:last-child {
-			border-right: 0;
-		}
-	}
-
-	/* ── Formats ────────────────────────────────────── */
-
-	.formats .container {
-		display: grid;
-		gap: clamp(2rem, 4vw, 3rem);
-	}
-
-	.formats__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		border-top: 1px solid var(--color-rule);
-	}
-
-	.formats__card {
+	.approach__method {
 		display: grid;
 		gap: 1rem;
-		padding: clamp(1.75rem, 3vw, 2.5rem) 0;
-		border-bottom: 1px solid var(--color-rule);
+		max-width: 62ch;
 	}
 
-	.formats__head {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: baseline;
-		gap: 0.75rem 1.5rem;
-	}
-
-	.formats__title {
-		font-size: clamp(1.4rem, 1.6vw + 0.9rem, 2.05rem);
-		font-weight: 500;
-		letter-spacing: -0.015em;
-		line-height: 1.2;
+	.approach__lead {
+		font-size: 1.1rem;
+		color: var(--color-text);
+		line-height: 1.6;
 		margin: 0;
 	}
 
-	.formats__duration {
+	.approach__honesty {
+		font-size: 1.02rem;
+		color: var(--color-text-soft);
+		line-height: 1.6;
+		margin: 0;
+		padding-left: clamp(1rem, 2vw, 1.5rem);
+		border-left: 1px solid var(--color-accent);
+	}
+
+	/* ── Facts ──────────────────────────────────────── */
+
+	.facts .container {
+		display: grid;
+		gap: clamp(1.75rem, 3.5vw, 2.75rem);
+	}
+
+	.facts__eyebrow {
+		margin: 0;
+	}
+
+	.facts__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: clamp(2rem, 4vw, 3rem);
+		border-top: 1px solid var(--color-rule);
+		padding-top: clamp(1.5rem, 3vw, 2.25rem);
+		margin: 0;
+	}
+
+	.facts__item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.facts__value {
+		font-size: clamp(2.4rem, 3.4vw + 1rem, 3.8rem);
+		font-weight: 500;
+		color: var(--color-accent);
+		letter-spacing: -0.04em;
+		line-height: 0.95;
+		font-feature-settings:
+			'tnum' 1,
+			'lnum' 1;
+		display: flex;
+		align-items: baseline;
+		gap: 0.15em;
+	}
+
+	.facts__unit {
+		font-size: 0.42em;
+		font-weight: 500;
+		letter-spacing: 0.02em;
+		color: var(--color-accent);
+	}
+
+	.facts__label {
 		font-size: 0.78rem;
 		font-weight: 500;
 		text-transform: uppercase;
 		letter-spacing: 0.18em;
-		color: var(--color-accent);
-		white-space: nowrap;
+		color: var(--color-text);
+		margin-top: 0.4rem;
 	}
 
-	.formats__description {
-		max-width: 56ch;
-		font-size: 1.05rem;
-		line-height: 1.6;
+	.facts__detail {
+		font-size: 0.95rem;
+		color: var(--color-text-soft);
+		max-width: 34ch;
+		line-height: 1.5;
+	}
+
+	.facts__certifs {
+		display: flex;
+		gap: 0.5rem 1rem;
+		flex-wrap: wrap;
+		align-items: baseline;
+		font-size: 0.95rem;
 		color: var(--color-text-soft);
 		margin: 0;
+		max-width: none;
+		border-top: 1px solid var(--color-rule);
+		padding-top: clamp(1.25rem, 2.5vw, 1.75rem);
 	}
 
-	@media (min-width: 820px) {
-		.formats__grid {
-			grid-template-columns: repeat(2, 1fr);
-			column-gap: clamp(2rem, 4vw, 4rem);
-		}
-		.formats__card {
-			border-bottom: 0;
+	.facts__certifs-label {
+		font-size: 0.78rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		color: var(--color-text-muted);
+	}
+
+	@media (min-width: 720px) {
+		.facts__grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.5rem);
 		}
 	}
 
@@ -652,7 +635,9 @@
 		font-weight: 500;
 		letter-spacing: 0.18em;
 		color: var(--color-accent);
-		font-feature-settings: 'tnum' 1, 'lnum' 1;
+		font-feature-settings:
+			'tnum' 1,
+			'lnum' 1;
 		padding-top: 0.55rem;
 		min-width: 2ch;
 	}
@@ -682,7 +667,9 @@
 		font-size: 0.85rem;
 		font-weight: 500;
 		color: var(--color-text-muted);
-		font-feature-settings: 'tnum' 1, 'lnum' 1;
+		font-feature-settings:
+			'tnum' 1,
+			'lnum' 1;
 		white-space: nowrap;
 	}
 
@@ -733,35 +720,44 @@
 		font-weight: 400;
 	}
 
-	/* ── Inès ───────────────────────────────────────── */
+	/* ── Labs ───────────────────────────────────────── */
 
-	.ines .container {
+	.labs .container {
 		display: grid;
-		gap: clamp(2rem, 4vw, 3rem);
+		gap: clamp(1.5rem, 3vw, 2.25rem);
 	}
 
-	.ines__grid {
+	.labs__lead {
+		font-size: 1.1rem;
+		color: var(--color-text-soft);
+		line-height: 1.6;
+		max-width: 64ch;
+		margin: 0;
+	}
+
+	.labs__grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: clamp(1.5rem, 3vw, 2.5rem);
 		border-top: 1px solid var(--color-rule);
-		padding-top: clamp(2rem, 4vw, 3rem);
 	}
 
-	.ines__head {
+	.labs__card {
 		display: grid;
-		gap: 0.4rem;
+		gap: 0.6rem;
+		padding: clamp(1.75rem, 3.5vw, 2.75rem) 0;
+		border-bottom: 1px solid var(--color-rule);
+		align-content: start;
 	}
 
-	.ines__name {
-		font-size: clamp(2rem, 3vw + 1rem, 3rem);
+	.labs__name {
+		font-size: clamp(1.6rem, 2vw + 1rem, 2.4rem);
 		font-weight: 500;
 		letter-spacing: -0.025em;
 		line-height: 1.05;
 		margin: 0;
 	}
 
-	.ines__tagline {
+	.labs__tagline {
 		font-size: 0.78rem;
 		font-weight: 500;
 		text-transform: uppercase;
@@ -771,77 +767,21 @@
 		max-width: none;
 	}
 
-	.ines__body {
-		display: grid;
-		gap: 1.25rem;
-	}
-
-	.ines__description {
-		max-width: 60ch;
-		font-size: 1.05rem;
+	.labs__description {
+		font-size: 1.02rem;
 		line-height: 1.6;
 		color: var(--color-text-soft);
 		margin: 0;
-	}
-
-	.ines__link {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.4rem;
-		font-size: 0.95rem;
-		color: var(--color-text);
-		border-bottom: 1px solid var(--color-accent);
-		padding-bottom: 1px;
-		justify-self: start;
-	}
-
-	.ines__link:hover {
-		color: var(--color-accent);
+		max-width: 46ch;
 	}
 
 	@media (min-width: 820px) {
-		.ines__grid {
-			grid-template-columns: 1fr 2fr;
-			gap: clamp(2rem, 4vw, 4rem);
+		.labs__grid {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: clamp(2rem, 5vw, 4.5rem);
 		}
-	}
-
-	/* ── AI focus ───────────────────────────────────── */
-
-	.ai__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: clamp(1.5rem, 3vw, 2.5rem);
-		border-top: 1px solid var(--color-rule);
-		padding-top: clamp(2rem, 4vw, 3rem);
-	}
-
-	.ai__head {
-		display: grid;
-		gap: 0.75rem;
-	}
-
-	.ai__title {
-		font-size: clamp(1.7rem, 2vw + 1rem, 2.4rem);
-		font-weight: 500;
-		letter-spacing: -0.02em;
-		line-height: 1.15;
-		margin: 0;
-		max-width: 18ch;
-	}
-
-	.ai__description {
-		max-width: 52ch;
-		font-size: 1.05rem;
-		line-height: 1.6;
-		color: var(--color-text-soft);
-		margin: 0;
-	}
-
-	@media (min-width: 820px) {
-		.ai__grid {
-			grid-template-columns: 1fr 1fr;
-			gap: clamp(2rem, 4vw, 4rem);
+		.labs__card {
+			border-bottom: 0;
 		}
 	}
 

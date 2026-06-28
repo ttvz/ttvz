@@ -80,19 +80,22 @@ const html = `<!doctype html>
 <body>
   <div class="top">
     <span class="ttvz">ttvz</span>
-    <span class="badge">Consultant produit · Lyon</span>
+    <span class="badge">Conseil produit · Lyon</span>
   </div>
   <div>
     <h1 class="name">Thibaut Valez</h1>
-    <p class="tagline">Performance Produit · <span class="italic">Delivery</span> · Conduite du changement</p>
+    <p class="tagline">Je transforme les idées en <span class="italic">produits qui comptent</span>.</p>
     <div class="rule"></div>
-    <p class="meta"><b>13 ans</b> en produit · <b>−40 %</b> Time-to-Market · <b>×2</b> Prédictibilité</p>
+    <p class="meta"><b>Product management</b> · <b>Conduite du changement</b></p>
   </div>
 </body>
 </html>`;
 
 const browser = await chromium.launch();
-const ctx = await browser.newContext({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
+const ctx = await browser.newContext({
+	viewport: { width: 1200, height: 630 },
+	deviceScaleFactor: 1
+});
 const page = await ctx.newPage();
 await page.setContent(html, { waitUntil: 'networkidle' });
 await page.evaluate(() => document.fonts.ready);

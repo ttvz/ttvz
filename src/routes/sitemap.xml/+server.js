@@ -1,5 +1,5 @@
 const SITE = 'https://www.ttvz.fr';
-const LASTMOD = '2026-05-07';
+const LASTMOD = '2026-06-28';
 
 export const prerender = true;
 
