@@ -20,7 +20,8 @@
 			index: $_('offers.o2_index'),
 			title: $_('offers.o2_title'),
 			lead: $_('offers.o2_lead'),
-			description: $_('offers.o2_description')
+			description: $_('offers.o2_description'),
+			conviction: $_('offers.o2_conviction')
 		}
 	];
 
@@ -171,6 +172,9 @@
 					<h2 class="offers__title">{offer.title}</h2>
 					<p class="offers__card-lead">{offer.lead}</p>
 					<p class="offers__description">{offer.description}</p>
+					{#if offer.conviction}
+						<p class="offers__conviction">{offer.conviction}</p>
+					{/if}
 				</article>
 			{/each}
 		</div>
@@ -533,6 +537,18 @@
 		line-height: 1.6;
 		color: var(--color-text-soft);
 		margin: 0;
+		max-width: 46ch;
+	}
+
+	.offers__conviction {
+		font-style: italic;
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.6;
+		color: var(--color-text);
+		margin: 0.5rem 0 0;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--color-rule);
 		max-width: 46ch;
 	}
 
