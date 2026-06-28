@@ -65,7 +65,7 @@
 		},
 		{
 			value: $_('facts.b_value'),
-			unit: $_('facts.b_unit'),
+			unit: '',
 			label: $_('facts.b_label'),
 			detail: $_('facts.b_detail')
 		},
