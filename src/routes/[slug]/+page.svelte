@@ -87,12 +87,18 @@
 		{
 			name: $_('labs.l1_name'),
 			tagline: $_('labs.l1_tagline'),
-			description: $_('labs.l1_description')
+			description: $_('labs.l1_description'),
+			build: $_('labs.l1_build'),
+			linkLabel: $_('labs.l1_link_label'),
+			linkUrl: $_('labs.l1_link_url')
 		},
 		{
 			name: $_('labs.l2_name'),
 			tagline: $_('labs.l2_tagline'),
-			description: $_('labs.l2_description')
+			description: $_('labs.l2_description'),
+			build: $_('labs.l2_build'),
+			linkLabel: $_('labs.l2_link_label'),
+			linkUrl: $_('labs.l2_link_url')
 		}
 	];
 </script>
@@ -192,7 +198,6 @@
 			</ol>
 			<div class="approach__method">
 				<p class="approach__lead">{$_('approach.lead')}</p>
-				<p class="approach__honesty">{$_('approach.honesty')}</p>
 			</div>
 		</div>
 	</div>
@@ -269,6 +274,11 @@
 					<h2 class="labs__name">{lab.name}</h2>
 					<p class="labs__tagline">{lab.tagline}</p>
 					<p class="labs__description">{lab.description}</p>
+					<p class="labs__build">{lab.build}</p>
+					<a class="labs__link" href={lab.linkUrl} target="_blank" rel="noopener">
+						{lab.linkLabel}
+						<span aria-hidden="true">↗</span>
+					</a>
 				</article>
 			{/each}
 		</div>
@@ -434,6 +444,25 @@
 		.hero__media {
 			align-self: stretch;
 			aspect-ratio: auto;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.hero__text {
+			align-items: center;
+			text-align: center;
+		}
+		.hero__title {
+			max-width: none;
+		}
+		.hero__title::after {
+			margin-inline: auto;
+		}
+		.hero__lead {
+			max-width: none;
+		}
+		.hero__cta {
+			justify-content: center;
 		}
 	}
 
@@ -736,6 +765,19 @@
 		}
 	}
 
+	@media (max-width: 559.98px) {
+		.facts__item {
+			align-items: center;
+			text-align: center;
+		}
+		.facts__value {
+			justify-content: center;
+		}
+		.facts__detail {
+			max-width: none;
+		}
+	}
+
 	/* ── Missions ───────────────────────────────────── */
 
 	.missions .container {
@@ -845,6 +887,7 @@
 		display: grid;
 		gap: 0.75rem;
 		align-content: start;
+		grid-column: 1 / -1;
 	}
 
 	.missions__metric {
@@ -894,6 +937,9 @@
 		.missions__item {
 			grid-template-columns: auto 1fr 1.2fr;
 			gap: clamp(2rem, 4vw, 3rem);
+		}
+		.missions__detail {
+			grid-column: auto;
 		}
 	}
 
@@ -961,6 +1007,39 @@
 		color: var(--color-text-soft);
 		margin: 0;
 		max-width: 46ch;
+	}
+
+	.labs__build {
+		font-size: 0.95rem;
+		font-weight: 400;
+		line-height: 1.55;
+		color: var(--color-text);
+		margin: 0;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--color-rule);
+		max-width: 46ch;
+	}
+
+	.labs__link {
+		justify-self: start;
+		font-size: 0.72rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		color: var(--color-text);
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		padding-bottom: 4px;
+		border-bottom: 1px solid var(--color-text);
+		transition:
+			color 0.16s var(--ease-out),
+			border-color 0.16s var(--ease-out);
+	}
+
+	.labs__link:hover {
+		color: var(--color-accent);
+		border-bottom-color: var(--color-accent);
 	}
 
 	@media (min-width: 820px) {

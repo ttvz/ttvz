@@ -1,6 +1,6 @@
 {
 	"seo": {
-		"title": "Thibaut Valez - Conseil produit",
+		"title": "Thibaut Valez - Product management & conduite du changement",
 		"description": "Je transforme les idées en produits qui comptent. Product management piloté par la valeur, conduite du changement qui embarque les équipes. De la vision au lancement."
 	},
 	"nav": {
@@ -15,7 +15,7 @@
 		"calendly": "https://calendly.com/thibaut-valez/30min"
 	},
 	"hero": {
-		"eyebrow": "Thibaut Valez · Conseil produit · Lyon",
+		"eyebrow": "Thibaut Valez · Produit & transformation · Lyon",
 		"title": "Je transforme les idées en",
 		"title_accent": "produits qui comptent.",
 		"lead": "Trois leviers à aligner : la valeur, l'exécution, l'embarquement des équipes. C'est là qu'un produit décolle.",
@@ -28,20 +28,19 @@
 		"o1_index": "01",
 		"o1_title": "Product management",
 		"o1_lead": "La performance produit, pilotée par la business value.",
-		"o1_description": "Je priorise sur le match valeur / complexité - le WSJF en SAFe -, pas sur l'intuition. De la vision et la discovery jusqu'au lancement. Chaque arbitrage devient concret : ce qu'on construit, ce qu'on coupe, dans quel ordre.",
+		"o1_description": "Tout part de la valeur, et la valeur se calcule. Je pars des personas - qui, quel problème, quel enjeu business derrière - pour traduire les intentions en business value chiffrée, puis je priorise sur le match valeur / complexité, le WSJF, pas sur l'intuition : ce qu'on construit, ce qu'on coupe, dans quel ordre. Du discovery au lancement, je livre par incréments réguliers et je mesure le résultat - ROI et adoption contre les estimations de départ. Quand une feature rate sa cible, le chiffre le dit, et ça oriente la suite.",
 		"o2_index": "02",
 		"o2_title": "Conduite du changement",
 		"o2_lead": "Embarquer les équipes, pas leur imposer.",
-		"o2_description": "Management et coordination d'équipes pluridisciplinaires. Je porte le narratif auprès du leadership pour que la direction et le terrain avancent dans le même sens - et que le changement tienne après mon départ.",
-		"o2_conviction": "Une conviction guide ma façon de travailler : à mesure que l'intelligence artificielle et l'automatisation transforment les métiers, l'enjeu cesse d'être seulement technique, il devient humain. Dans la tech, le changement est permanent et il continuera de s'accélérer. Plutôt que de lutter contre le vent, je préfère prendre le courant : maîtriser sa trajectoire au lieu de la subir. Un changement réussi est un changement adopté."
+		"o2_description": "Management et coordination d'équipes pluridisciplinaires. Je porte le narratif dans les deux sens : auprès du leadership pour tenir le cap, sur le terrain pour donner du sens. J'embarque par la montée en compétence et l'autonomie, pas par la contrainte - et j'ancre les nouvelles pratiques dans le quotidien des équipes, pour que le changement tienne après mon départ.",
+		"o2_conviction": "Une conviction guide mon travail : à mesure que l'intelligence artificielle et l'automatisation transforment les métiers, l'enjeu cesse d'être seulement technique, il devient humain. Dans la tech, le changement est permanent et il s'accélère. On ne le freine pas, on en fait un levier. Un changement réussi est un changement adopté."
 	},
 	"approach": {
 		"eyebrow": "Approche",
 		"claim_a": "Une stratégie qui ne se livre pas, ça reste un slide.",
 		"claim_b": "Livrer la mauvaise priorité, c'est de l'agitation.",
 		"claim_c": "Une transformation imposée, c'est de la résistance.",
-		"lead": "Ma méthode tient en une idée : rendre les arbitrages concrets. Je priorise par personas et par business value calculée, puis je suis le résultat - performance estimée contre performance réelle, ROI et adoption.",
-		"honesty": "Certaines features ratent la cible que j'avais calculée. Le résultat reste mesurable, et c'est un pas vers le suivant. Je préfère ça à un ROI générique que personne ne vérifie."
+		"lead": "Mes deux offres répondent à ces trois écueils. Le fil commun : rendre chaque arbitrage concret, et regarder le résultat en face plutôt qu'un ROI générique que personne ne vérifie. Quand un pari paie, on le sait. Quand il rate, on le sait aussi - et on ajuste."
 	},
 	"facts": {
 		"eyebrow": "Repères",
@@ -73,22 +72,22 @@
 		"m1_meta": "Fintech · Groupe Crédit Agricole",
 		"m1_period": "2023 - 2025",
 		"m1_metric": "Time-to-market -40 %. Prédictibilité ≈ ×2.",
-		"m1_description": "Plateforme de leasing. J'ai structuré le delivery et embarqué l'équipe produit, de la vision à l'exécution. On livre plus vite, et on tient les dates.",
+		"m1_description": "Plateforme de leasing. J'ai porté le produit du discovery jusqu'à l'analyse et l'adoption côté client, en passant par un delivery régulier. Priorisation au match valeur / complexité - le WSJF -, décisions sur la donnée. On livre plus vite, on tient les dates, et l'équipe produit tourne en autonomie après mon départ.",
 		"m2_client": "CATS",
 		"m2_meta": "Banque régulée · Centre de compétences",
 		"m2_period": "2022 - 2023",
-		"m2_metric": "7 squads coordonnées en parallèle.",
-		"m2_description": "Coordination de sept squads en simultané dans un grand groupe bancaire régulé. Un cadre de delivery commun, sans casser l'autonomie de chacune.",
+		"m2_metric": "7 squads en parallèle · 4 passées à l'échelle.",
+		"m2_description": "Transformation agile à l'échelle dans un grand groupe bancaire régulé. Double posture : accompagnement direct des squads - delivery, performance produit, embarquement - et contribution au centre de compétences, dont le relais DevOps sur le terrain. 6 personnes certifiées PSM1 au passage. Un cadre de delivery commun, sans casser l'autonomie de chacune.",
 		"m3_client": "Kering",
 		"m3_meta": "Luxe · International (via Keyrus)",
 		"m3_period": "2017 - 2018",
 		"m3_metric": "Pilote validé, puis 5 pays · 3 continents.",
-		"m3_description": "En proxy PO, priorisation au WSJF. Pilote lancé puis validé, avant un rollout international sur cinq pays et trois continents.",
+		"m3_description": "En proxy PO, priorisation au WSJF : la valeur d'abord, l'intuition jamais. Deux produits à forts enjeux business. Le premier, lancé en pilote à Hong Kong puis validé sur le terrain et déployé sur 5 pays et 3 continents : un succès opérationnel, un client séduit par l'organisation et le travail réalisé, des usagers conquis et promoteurs. Cette réussite m'a valu le second. Jusqu'à 15 personnes coordonnées sur le déploiement.",
 		"m4_client": "Aktome",
-		"m4_meta": "SaaS · Greenfield",
-		"m4_period": "",
-		"m4_metric": "Le succès commercial n'a pas été au rendez-vous.",
-		"m4_description": "SaaS construit de zéro. Le marché n'a pas suivi. Ce que j'en retire : challenger les hypothèses business beaucoup plus tôt, avant la première ligne de code. C'est ce qui muscle ma discovery aujourd'hui.",
+		"m4_meta": "SaaS · Construit de zéro",
+		"m4_period": "2019 - 2020",
+		"m4_metric": "Du cadrage au produit livré.",
+		"m4_description": "Un SaaS porté du cadrage jusqu'au produit livré. Commercialement, le marché n'a pas suivi. Ce que j'en retire, et qui muscle mon discovery aujourd'hui : challenger les hypothèses business avant la première ligne de code, pas après.",
 		"others_label": "Aussi",
 		"others_list": "L'Oréal · SNCF · Michelin · METRO · PepsiCo"
 	},
@@ -97,10 +96,16 @@
 		"lead": "Je ne fais pas que conseiller : je conçois, je construis, je livre. Deux labs pour rester à l'état de l'art et le prouver. Ce ne sont pas des offres.",
 		"l1_name": "Inès",
 		"l1_tagline": "SaaS IA · Syndics de copropriété",
-		"l1_description": "Conçu et construit de zéro. Un produit IA pour les syndics de copropriété. Ma façon de garder les mains dans l'IA en conditions réelles, pas en slide.",
+		"l1_description": "Le syndic bénévole porte seul une responsabilité juridiquement lourde, sans formation ni back-office. Sa vraie peur, ce n'est pas de perdre du temps : c'est de mal faire. Inès ne se contente pas de répondre à ses questions, elle exécute - convocations, PV, appels de fonds, conformité - pendant qu'il garde la main via un curseur d'autonomie : ce qu'il délègue, ce qu'il valide. Une responsabilité isolante et risquée devient couverte, exécutée, maîtrisée.",
+		"l1_build": "Conçu et codé de zéro, en propre - l'agent qui exécute et le curseur d'autonomie au cœur du produit. Du discovery au marché.",
+		"l1_link_label": "avec-ines.fr",
+		"l1_link_url": "https://avec-ines.fr",
 		"l2_name": "Vagabond",
 		"l2_tagline": "Lab crypto · Leasing on-chain",
-		"l2_description": "Du leasing adossé à des crypto-actifs. Une couche risque et conformité posée sur un moteur on-chain, dans le cadre MiCA. Là où la finance régulée rencontre la blockchain."
+		"l2_description": "Financer ce que les autres ne savent pas lire. Un libéral ou un artisan qui détient son patrimoine en crypto est coincé entre deux mauvaises options : renoncer à l'équipement dont il a besoin, ou liquider - imposition sur la plus-value, sortie d'un actif qu'il croit voir monter. Les financeurs classiques ne savent pas lire ce patrimoine comme une garantie, donc ils refusent par défaut. Vagabond casse le dilemme : patrimoine pris en garantie lisible, équipement financé sans vente ni événement fiscal, risque piloté en coulisses. Le client repart avec son matériel et son patrimoine intact.",
+		"l2_build": "Ce qui rend ce \"oui\" tenable : une couche risque et conformité que la banque n'a pas, posée sur Morpho et dans le cadre MiCA.",
+		"l2_link_label": "vgbd-site.vercel.app (vitrine démo, données fictives)",
+		"l2_link_url": "https://vgbd-site.vercel.app"
 	},
 	"final": {
 		"eyebrow": "Pour échanger",
