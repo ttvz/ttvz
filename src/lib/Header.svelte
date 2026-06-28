@@ -56,7 +56,7 @@
 		left: 0;
 		right: 0;
 		z-index: 50;
-		background: rgba(255, 255, 255, 0);
+		background: rgba(247, 245, 241, 0);
 		backdrop-filter: blur(0);
 		transition:
 			background 0.25s var(--ease-out),
@@ -66,8 +66,8 @@
 	}
 
 	header.scrolled {
-		background: rgba(255, 255, 255, 0.85);
-		backdrop-filter: saturate(180%) blur(12px);
+		background: rgba(247, 245, 241, 0.88);
+		backdrop-filter: saturate(120%) blur(10px);
 		border-bottom-color: var(--color-rule);
 	}
 
@@ -80,9 +80,10 @@
 	}
 
 	.logo {
-		font-weight: 700;
-		font-size: 1.35rem;
-		letter-spacing: -0.02em;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 1.6rem;
+		letter-spacing: 0.02em;
 		color: var(--color-text);
 	}
 
@@ -92,12 +93,15 @@
 
 	.anchors {
 		display: none;
-		gap: 2rem;
+		gap: 2.25rem;
 	}
 
 	.anchors a {
-		font-size: 0.95rem;
-		color: var(--color-text-soft);
+		font-size: 0.69rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.26em;
+		color: var(--color-text);
 	}
 
 	.anchors a:hover {
@@ -107,26 +111,29 @@
 	.right {
 		display: flex;
 		align-items: center;
-		gap: 1.25rem;
+		gap: 1.5rem;
 	}
 
 	.lang {
 		display: flex;
 		align-items: center;
-		gap: 0.4rem;
-		font-size: 0.85rem;
+		gap: 0.45rem;
+		font-size: 0.69rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.22em;
 		color: var(--color-text-muted);
 	}
 
 	.lang button {
-		font-weight: 400;
+		font-weight: 500;
+		text-transform: uppercase;
 		color: var(--color-text-muted);
-		letter-spacing: 0.05em;
+		letter-spacing: 0.22em;
 	}
 
 	.lang button.active {
 		color: var(--color-text);
-		font-weight: 500;
 	}
 
 	.lang button:hover {
@@ -136,17 +143,19 @@
 	.cta {
 		display: inline-flex;
 		align-items: center;
-		padding: 0.55rem 1rem;
-		background: var(--color-text);
+		padding: 0.7rem 1.15rem;
+		background: var(--color-accent);
 		color: #fff;
-		font-size: 0.9rem;
+		font-size: 0.69rem;
 		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.22em;
 		border-radius: var(--radius-sm);
 		transition: background 0.18s var(--ease-out);
 	}
 
 	.cta:hover {
-		background: var(--color-accent);
+		background: var(--color-accent-hover);
 	}
 
 	@media (min-width: 820px) {

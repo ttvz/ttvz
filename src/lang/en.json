@@ -16,14 +16,15 @@
 	},
 	"hero": {
 		"eyebrow": "Thibaut Valez · Product consulting · Lyon",
-		"title": "I turn ideas into products that matter.",
+		"title": "I turn ideas into",
+		"title_accent": "products that matter.",
 		"lead": "Three levers to align: value, execution, team buy-in. That's where a product takes off.",
 		"cta_primary": "Book a call",
-		"cta_secondary": "See my LinkedIn"
+		"cta_secondary": "See my LinkedIn",
+		"photo_caption": "Thibaut Valez"
 	},
 	"offers": {
 		"eyebrow": "Two offers",
-		"lead": "Two offers for three levers. Value and execution on one side. Team buy-in on the other.",
 		"o1_index": "01",
 		"o1_title": "Product management",
 		"o1_lead": "Product performance, driven by business value.",
@@ -55,11 +56,19 @@
 		"c_unit": "squads",
 		"c_label": "Coordination",
 		"c_detail": "Run in parallel inside a large regulated banking group.",
+		"d_value": "3",
+		"d_unit": "continents",
+		"d_label": "International",
+		"d_detail": "Cross-country team collaboration and sync across EMEA, Asia and the US.",
 		"certifs_label": "Certifications",
 		"certifs_list": "Certified Scrum Product Owner · Certified Scrum Master · SAFe Practitioner"
 	},
 	"missions": {
 		"eyebrow": "Selected work",
+		"title": "Selected",
+		"title_accent": "work",
+		"selection_label": "Selection",
+		"selection_period": "2017 - 2025",
 		"m1_client": "Onliz",
 		"m1_meta": "Fintech · Crédit Agricole group",
 		"m1_period": "2023 - 2025",
@@ -94,8 +103,11 @@
 		"l2_description": "Leasing backed by crypto assets. A risk and compliance layer on top of an on-chain engine, within the MiCA framework. Where regulated finance meets the blockchain."
 	},
 	"final": {
-		"eyebrow": "Contact",
-		"title": "Let's talk about your situation.",
+		"eyebrow": "Get in touch",
+		"title": "Let's talk about your",
+		"title_accent": "situation.",
+		"base_label": "Based in",
+		"base_value": "Lyon, available regionally & remotely",
 		"lead": "A 30-minute call to understand where you stand and see if I can help. No strings attached.",
 		"cta": "Book a call",
 		"label_calendly": "Calendly",
