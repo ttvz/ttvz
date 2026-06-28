@@ -1,6 +1,6 @@
 {
 	"seo": {
-		"title": "Thibaut Valez - Product consulting",
+		"title": "Thibaut Valez - Product management & change management",
 		"description": "I turn ideas into products that matter. Product management driven by value, change management that brings teams along. From vision to launch."
 	},
 	"nav": {
@@ -15,7 +15,7 @@
 		"calendly": "https://calendly.com/thibaut-valez/30min"
 	},
 	"hero": {
-		"eyebrow": "Thibaut Valez · Product consulting · Lyon",
+		"eyebrow": "Thibaut Valez · Product & transformation · Lyon",
 		"title": "I turn ideas into",
 		"title_accent": "products that matter.",
 		"lead": "Three levers to align: value, execution, team buy-in. That's where a product takes off.",
@@ -28,20 +28,19 @@
 		"o1_index": "01",
 		"o1_title": "Product management",
 		"o1_lead": "Product performance, driven by business value.",
-		"o1_description": "I prioritise on the value / complexity match - WSJF in SAFe -, not on gut feel. From vision and discovery through to launch. Every trade-off becomes concrete: what we build, what we cut, in what order.",
+		"o1_description": "It all starts with value, and value can be calculated. I start from personas - who, which problem, what business stake behind it - to turn intentions into quantified business value, then I prioritise on the value / complexity match, WSJF, not on gut feeling: what we build, what we cut, in which order. From discovery to launch, I deliver in steady increments and I measure the outcome - ROI and adoption against the initial estimates. When a feature misses its target, the numbers say so, and that steers what comes next.",
 		"o2_index": "02",
 		"o2_title": "Change management",
 		"o2_lead": "Bring teams along, don't impose on them.",
-		"o2_description": "Managing and coordinating cross-functional teams. I own the narrative with leadership so that the top and the ground move in the same direction - and the change holds after I leave.",
-		"o2_conviction": "One conviction drives the way I work: as AI and automation reshape jobs, the challenge stops being purely technical and turns human. In tech, change is constant, and it will only accelerate. Rather than fighting the wind, I'd rather catch the current: steering your course instead of enduring it. A change that works is a change that gets adopted."
+		"o2_description": "Management and coordination of cross-functional teams. I carry the narrative both ways: to leadership to hold the course, on the ground to give it meaning. I bring people on board through skill-building and autonomy, not through pressure - and I anchor new practices in teams' daily work, so the change holds after I leave.",
+		"o2_conviction": "One conviction guides my work: as artificial intelligence and automation reshape jobs, the challenge stops being purely technical and becomes human. In tech, change is constant, and it's accelerating. You don't slow it down, you make it a lever. A successful change is an adopted change."
 	},
 	"approach": {
 		"eyebrow": "Approach",
 		"claim_a": "A strategy that doesn't ship is just a slide.",
 		"claim_b": "Shipping the wrong priority is just busywork.",
 		"claim_c": "A top-down transformation breeds resistance.",
-		"lead": "My method comes down to one idea: make trade-offs concrete. I prioritise by personas and by calculated business value, then I track the outcome - estimated versus actual performance, ROI and adoption.",
-		"honesty": "Some features miss the target I'd calculated. The result stays measurable, and it's a step toward the next one. I'll take that over a generic ROI nobody ever checks."
+		"lead": "My two offers answer these three pitfalls. The common thread: make every trade-off concrete, and look the result in the eye rather than a generic ROI no one ever checks. When a bet pays off, we know it. When it doesn't, we know that too - and we adjust."
 	},
 	"facts": {
 		"eyebrow": "At a glance",
@@ -73,22 +72,22 @@
 		"m1_meta": "Fintech · Crédit Agricole group",
 		"m1_period": "2023 - 2025",
 		"m1_metric": "Time-to-market -40%. Predictability ≈ ×2.",
-		"m1_description": "Leasing platform. I structured delivery and brought the product team along, from vision to execution. We ship faster, and we hit the dates.",
+		"m1_description": "A leasing platform. I drove the product from discovery through to customer analysis and adoption, with steady delivery throughout. Prioritisation on the value / complexity match - WSJF -, decisions made on data. We ship faster, we hold our dates, and the product team runs on its own after I leave.",
 		"m2_client": "CATS",
 		"m2_meta": "Regulated banking · Competence centre",
 		"m2_period": "2022 - 2023",
-		"m2_metric": "7 squads coordinated in parallel.",
-		"m2_description": "Coordinating seven squads at once inside a large regulated banking group. A shared delivery framework, without breaking each team's autonomy.",
+		"m2_metric": "7 squads in parallel · 4 scaled up.",
+		"m2_description": "Agile transformation at scale in a large regulated banking group. A dual stance: hands-on with the squads - delivery, product performance, buy-in - and contributing to the competency centre, including relaying DevOps practices on the ground. 6 people certified PSM1 along the way. A shared delivery framework, without breaking each squad's autonomy.",
 		"m3_client": "Kering",
 		"m3_meta": "Luxury · International (via Keyrus)",
 		"m3_period": "2017 - 2018",
 		"m3_metric": "Pilot validated, then 5 countries · 3 continents.",
-		"m3_description": "As proxy PO, prioritising with WSJF. Pilot launched then validated, before an international rollout across five countries and three continents.",
+		"m3_description": "As proxy PO, prioritisation with WSJF: value first, gut feeling never. Two products with high business stakes. The first, launched as a pilot in Hong Kong, then validated in the field and rolled out across 5 countries and 3 continents: an operational success, a client won over by the way it was run and the work delivered, users won over who became advocates. That win earned me the second. Up to 15 people coordinated on the rollout.",
 		"m4_client": "Aktome",
-		"m4_meta": "SaaS · Greenfield",
-		"m4_period": "",
-		"m4_metric": "Commercial success wasn't there.",
-		"m4_description": "SaaS built from scratch. The market didn't follow. What I took from it: challenge the business assumptions far earlier, before the first line of code. That's what sharpens my discovery today.",
+		"m4_meta": "SaaS · Built from scratch",
+		"m4_period": "2019 - 2020",
+		"m4_metric": "From framing to shipped product.",
+		"m4_description": "A SaaS taken from framing through to a shipped product. Commercially, the market didn't follow. What I took from it, and what sharpens my discovery today: challenge the business assumptions before the first line of code, not after.",
 		"others_label": "Also",
 		"others_list": "L'Oréal · SNCF · Michelin · METRO · PepsiCo"
 	},
@@ -97,10 +96,16 @@
 		"lead": "I don't just advise: I design, I build, I ship. Two labs to stay at the state of the art and prove it. They are not offers.",
 		"l1_name": "Inès",
 		"l1_tagline": "AI SaaS · Property management",
-		"l1_description": "Designed and built from scratch. An AI product for residential property managers. My way of keeping my hands in AI in real conditions, not in a slide.",
+		"l1_description": "A volunteer building manager carries a legally heavy responsibility on their own, with no training and no back office. Their real fear isn't losing time, it's getting it wrong. Inès doesn't just answer questions, it executes - meeting notices, minutes, funding calls, compliance - while they keep control through an autonomy slider: what they delegate, what they validate. An isolating, risky responsibility becomes covered, executed, under control.",
+		"l1_build": "Designed and coded from scratch, solo - the agent that executes and the autonomy slider at the core of the product. From discovery to market.",
+		"l1_link_label": "avec-ines.fr",
+		"l1_link_url": "https://avec-ines.fr",
 		"l2_name": "Vagabond",
 		"l2_tagline": "Crypto lab · On-chain leasing",
-		"l2_description": "Leasing backed by crypto assets. A risk and compliance layer on top of an on-chain engine, within the MiCA framework. Where regulated finance meets the blockchain."
+		"l2_description": "Financing what others can't read. A self-employed professional or a tradesperson whose wealth sits in crypto is stuck between two bad options: give up the equipment they need to work, or liquidate it - capital gains tax, and exiting an asset they believe is still climbing. Traditional financers can't read that wealth as collateral, so they refuse by default. Vagabond breaks the dilemma: the wealth becomes readable collateral, the equipment is financed with no sale and no taxable event, and the risk is managed behind the scenes. The client leaves with both their equipment and their wealth, untouched.",
+		"l2_build": "What makes that \"yes\" viable: a risk and compliance layer banks don't have, built on Morpho and within the MiCA framework.",
+		"l2_link_label": "vgbd-site.vercel.app (demo, fictional data)",
+		"l2_link_url": "https://vgbd-site.vercel.app"
 	},
 	"final": {
 		"eyebrow": "Get in touch",
