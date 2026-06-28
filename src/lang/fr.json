@@ -16,14 +16,15 @@
 	},
 	"hero": {
 		"eyebrow": "Thibaut Valez · Conseil produit · Lyon",
-		"title": "Je transforme les idées en produits qui comptent.",
+		"title": "Je transforme les idées en",
+		"title_accent": "produits qui comptent.",
 		"lead": "Trois leviers à aligner : la valeur, l'exécution, l'embarquement des équipes. C'est là qu'un produit décolle.",
 		"cta_primary": "Prendre RDV",
-		"cta_secondary": "Voir mon profil LinkedIn"
+		"cta_secondary": "Voir mon profil LinkedIn",
+		"photo_caption": "Thibaut Valez"
 	},
 	"offers": {
 		"eyebrow": "Deux offres",
-		"lead": "Deux offres pour trois leviers. La valeur et l'exécution d'un côté. L'embarquement des équipes de l'autre.",
 		"o1_index": "01",
 		"o1_title": "Product management",
 		"o1_lead": "La performance produit, pilotée par la business value.",
@@ -31,7 +32,8 @@
 		"o2_index": "02",
 		"o2_title": "Conduite du changement",
 		"o2_lead": "Embarquer les équipes, pas leur imposer.",
-		"o2_description": "Management et coordination d'équipes pluridisciplinaires. Je porte le narratif auprès du leadership pour que la direction et le terrain avancent dans le même sens - et que le changement tienne après mon départ."
+		"o2_description": "Management et coordination d'équipes pluridisciplinaires. Je porte le narratif auprès du leadership pour que la direction et le terrain avancent dans le même sens - et que le changement tienne après mon départ.",
+		"o2_conviction": "Une conviction guide ma façon de travailler : à mesure que l'intelligence artificielle et l'automatisation transforment les métiers, l'enjeu cesse d'être seulement technique, il devient humain. Dans la tech, le changement est permanent et il continuera de s'accélérer. Plutôt que de lutter contre le vent, je préfère prendre le courant : maîtriser sa trajectoire au lieu de la subir. Un changement réussi est un changement adopté."
 	},
 	"approach": {
 		"eyebrow": "Approche",
@@ -55,11 +57,19 @@
 		"c_unit": "squads",
 		"c_label": "Coordination",
 		"c_detail": "Coordonnées en parallèle dans un grand groupe bancaire régulé.",
+		"d_value": "3",
+		"d_unit": "continents",
+		"d_label": "International",
+		"d_detail": "Collaboration et synchronisation d'équipes sur plusieurs pays : EMEA, Asie, US.",
 		"certifs_label": "Certifications",
 		"certifs_list": "Certified Scrum Product Owner · Certified Scrum Master · SAFe Practitioner"
 	},
 	"missions": {
 		"eyebrow": "Missions phares",
+		"title": "Missions",
+		"title_accent": "phares",
+		"selection_label": "Sélection",
+		"selection_period": "2017 - 2025",
 		"m1_client": "Onliz",
 		"m1_meta": "Fintech · Groupe Crédit Agricole",
 		"m1_period": "2023 - 2025",
@@ -94,8 +104,11 @@
 		"l2_description": "Du leasing adossé à des crypto-actifs. Une couche risque et conformité posée sur un moteur on-chain, dans le cadre MiCA. Là où la finance régulée rencontre la blockchain."
 	},
 	"final": {
-		"eyebrow": "Contact",
-		"title": "Parlons de votre situation.",
+		"eyebrow": "Pour échanger",
+		"title": "Parlons de votre",
+		"title_accent": "situation.",
+		"base_label": "Base",
+		"base_value": "Lyon, disponible en région & à distance",
 		"lead": "Un appel de 30 minutes pour comprendre où vous en êtes et voir si je peux aider. Sans engagement.",
 		"cta": "Prendre RDV",
 		"label_calendly": "Calendly",

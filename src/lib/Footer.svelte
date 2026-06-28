@@ -19,8 +19,7 @@
 <style>
 	footer {
 		border-top: 1px solid var(--color-rule);
-		padding-block: 1.5rem;
-		margin-top: 2rem;
+		padding-block: 2.5rem;
 		background: var(--color-bg);
 	}
 	.inner {
@@ -37,21 +36,29 @@
 	}
 	.logo {
 		color: var(--color-text);
-		font-weight: 700;
-		letter-spacing: -0.02em;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 1.6rem;
+		letter-spacing: 0.02em;
 	}
 	.muted {
-		font-size: 0.85rem;
+		font-size: 0.66rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.26em;
 		color: var(--color-text-muted);
 	}
 	.links {
 		display: flex;
-		gap: 1.5rem;
+		gap: 1.75rem;
 		flex-wrap: wrap;
 	}
 	.links a {
-		font-size: 0.85rem;
-		color: var(--color-text-soft);
+		font-size: 0.66rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.26em;
+		color: var(--color-text-muted);
 	}
 	.links a:hover {
 		color: var(--color-accent);

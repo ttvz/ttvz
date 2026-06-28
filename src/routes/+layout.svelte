@@ -4,7 +4,9 @@
 	import '@fontsource/jost/500.css';
 	import '@fontsource/jost/600.css';
 	import '@fontsource/jost/700.css';
+	import '@fontsource/jost/300-italic.css';
 	import '@fontsource/jost/400-italic.css';
+	import '@fontsource/jost/500-italic.css';
 
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
