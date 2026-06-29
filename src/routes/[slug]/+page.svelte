@@ -14,7 +14,8 @@
 			index: $_('offers.o1_index'),
 			title: $_('offers.o1_title'),
 			lead: $_('offers.o1_lead'),
-			description: $_('offers.o1_description')
+			description: $_('offers.o1_description'),
+			extra: $_('offers.o1_workshops')
 		},
 		{
 			index: $_('offers.o2_index'),
@@ -178,6 +179,9 @@
 					<h2 class="offers__title">{offer.title}</h2>
 					<p class="offers__card-lead">{offer.lead}</p>
 					<p class="offers__description">{offer.description}</p>
+					{#if offer.extra}
+						<p class="offers__description">{offer.extra}</p>
+					{/if}
 					{#if offer.conviction}
 						<p class="offers__conviction">{offer.conviction}</p>
 					{/if}
