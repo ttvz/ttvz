@@ -16,9 +16,9 @@
 	},
 	"hero": {
 		"eyebrow": "Thibaut Valez · Produit & transformation · Lyon",
-		"title": "Je transforme les idées en",
+		"title": "Transformer les idées en",
 		"title_accent": "produits qui comptent.",
-		"lead": "Trois leviers à aligner : la valeur, l'exécution, l'embarquement des équipes. C'est là qu'un produit décolle.",
+		"lead": "Trois leviers à aligner : la valeur, l'exécution, l'embarquement des équipes.",
 		"cta_primary": "Prendre RDV",
 		"cta_secondary": "Voir mon profil LinkedIn",
 		"photo_caption": "Thibaut Valez"
@@ -28,8 +28,8 @@
 		"o1_index": "01",
 		"o1_title": "Product management",
 		"o1_lead": "La performance produit, pilotée par la business value.",
-		"o1_description": "Tout part de la valeur, et la valeur se calcule. Je pars des personas - qui, quel problème, quel enjeu business derrière - pour traduire les intentions en business value chiffrée, puis je priorise sur le match valeur / complexité, le WSJF, pas sur l'intuition : ce qu'on construit, ce qu'on coupe, dans quel ordre. Du discovery au lancement, je livre par incréments réguliers et je mesure le résultat - ROI et adoption contre les estimations de départ. Quand une feature rate sa cible, le chiffre le dit, et ça oriente la suite.",
-		"o1_workshops": "Le besoin ne se devine pas, je le fais émerger. J'anime des ateliers pour le récolter et le qualifier : la valeur ressort de ces échanges, menés autant que possible avec les utilisateurs finaux et le management. Quand il faut être disruptif, je monte des formats créatifs pour réimaginer la façon de faire. Une fois livré, d'autres ateliers sécurisent la prise en main, l'adoption et l'amélioration. C'est un rendez-vous régulier, pas un one-shot : c'est ce qui ancre l'amélioration continue.",
+		"o1_description": "Tout part de la valeur, et elle ne se devine pas : je la fais émerger. J'anime des ateliers pour récolter et qualifier le besoin, autant que possible avec les utilisateurs finaux et le management. Quand il faut être disruptif, je monte des formats créatifs pour réimaginer la façon de faire. Ensuite la valeur se calcule : je pars des personas - qui, quel problème, quel enjeu business derrière - pour traduire les intentions en business value chiffrée, puis je priorise au match valeur / complexité, le WSJF, pas sur l'intuition. Ce qu'on construit, ce qu'on coupe, dans quel ordre.",
+		"o1_workshops": "Du discovery au lancement, je livre par incréments réguliers et je mesure le résultat - ROI et adoption contre les estimations de départ. Quand une feature rate sa cible, le chiffre le dit, et ça oriente la suite. Une fois livré, d'autres ateliers sécurisent la prise en main, l'adoption et l'amélioration : un rendez-vous régulier, pas un one-shot. C'est ce qui ancre l'amélioration continue.",
 		"o2_index": "02",
 		"o2_title": "Conduite du changement",
 		"o2_lead": "Embarquer les équipes, pas leur imposer.",
@@ -38,9 +38,9 @@
 	},
 	"approach": {
 		"eyebrow": "Approche",
-		"claim_a": "Une stratégie qui ne se livre pas, ça reste un slide.",
-		"claim_b": "Livrer la mauvaise priorité, c'est de l'agitation.",
-		"claim_c": "Une transformation imposée, c'est de la résistance.",
+		"claim_a": "Une stratégie ne vaut que livrée.",
+		"claim_b": "Livrer compte moins que livrer ce qui compte.",
+		"claim_c": "Une transformation ne s'impose pas, elle s'embarque.",
 		"lead": "Mes deux offres répondent à ces trois écueils. Le fil commun : rendre chaque arbitrage concret, et regarder le résultat en face plutôt qu'un ROI générique que personne ne vérifie. Quand un pari paie, on le sait. Quand il rate, on le sait aussi - et on ajuste."
 	},
 	"facts": {

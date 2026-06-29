@@ -16,9 +16,9 @@
 	},
 	"hero": {
 		"eyebrow": "Thibaut Valez · Product & transformation · Lyon",
-		"title": "I turn ideas into",
+		"title": "Turning ideas into",
 		"title_accent": "products that matter.",
-		"lead": "Three levers to align: value, execution, team buy-in. That's where a product takes off.",
+		"lead": "Three levers to align: value, execution, team buy-in.",
 		"cta_primary": "Book a call",
 		"cta_secondary": "See my LinkedIn",
 		"photo_caption": "Thibaut Valez"
@@ -28,8 +28,8 @@
 		"o1_index": "01",
 		"o1_title": "Product management",
 		"o1_lead": "Product performance, driven by business value.",
-		"o1_description": "It all starts with value, and value can be calculated. I start from personas - who, which problem, what business stake behind it - to turn intentions into quantified business value, then I prioritise on the value / complexity match, WSJF, not on gut feeling: what we build, what we cut, in which order. From discovery to launch, I deliver in steady increments and I measure the outcome - ROI and adoption against the initial estimates. When a feature misses its target, the numbers say so, and that steers what comes next.",
-		"o1_workshops": "Needs aren't guessed, I help them surface. I run workshops to gather and qualify them: value emerges from those conversations, held with end users and management whenever possible. When disruption is called for, I set up creative formats to reimagine how things are done. Once shipped, further workshops secure onboarding, adoption and improvement. It's a regular touchpoint, not a one-off: that's what anchors continuous improvement.",
+		"o1_description": "It all starts with value, and value isn't guessed: I help it surface. I run workshops to gather and qualify the need, with end users and management whenever possible. When disruption is called for, I set up creative formats to reimagine how things are done. Then value gets calculated: I start from personas - who, which problem, what business stake behind it - to turn intentions into quantified business value, then I prioritise on the value / complexity match, WSJF, not on gut feeling. What we build, what we cut, in which order.",
+		"o1_workshops": "From discovery to launch, I deliver in steady increments and I measure the outcome - ROI and adoption against the initial estimates. When a feature misses its target, the numbers say so, and that steers what comes next. Once shipped, further workshops secure onboarding, adoption and improvement: a regular touchpoint, not a one-off. That's what anchors continuous improvement.",
 		"o2_index": "02",
 		"o2_title": "Change management",
 		"o2_lead": "Bring teams along, don't impose on them.",
@@ -38,9 +38,9 @@
 	},
 	"approach": {
 		"eyebrow": "Approach",
-		"claim_a": "A strategy that doesn't ship is just a slide.",
-		"claim_b": "Shipping the wrong priority is just busywork.",
-		"claim_c": "A top-down transformation breeds resistance.",
+		"claim_a": "A strategy is only worth it once it ships.",
+		"claim_b": "Shipping matters less than shipping what matters.",
+		"claim_c": "A transformation isn't imposed, it's embraced.",
 		"lead": "My two offers answer these three pitfalls. The common thread: make every trade-off concrete, and look the result in the eye rather than a generic ROI no one ever checks. When a bet pays off, we know it. When it doesn't, we know that too - and we adjust."
 	},
 	"facts": {
