@@ -339,7 +339,7 @@
 		gap: clamp(2.5rem, 5vw, 4rem);
 		align-items: center;
 		padding-top: clamp(7rem, 11vw, 9.5rem);
-		padding-bottom: clamp(3.5rem, 7vw, 6rem);
+		padding-bottom: clamp(3.5rem, 4.5vw, 4.5rem);
 	}
 
 	.hero__text {
@@ -510,7 +510,7 @@
 
 	.offers .container {
 		display: grid;
-		gap: clamp(2.5rem, 5vw, 4.5rem);
+		gap: clamp(2.5rem, 3.5vw, 3rem);
 	}
 
 	.offers__grid {
@@ -1047,10 +1047,6 @@
 	}
 
 	@media (min-width: 820px) {
-		.labs__intro {
-			grid-template-columns: 1fr 1.4fr;
-			gap: clamp(2rem, 5vw, 4rem);
-		}
 		.labs__grid {
 			grid-template-columns: repeat(2, 1fr);
 		}
